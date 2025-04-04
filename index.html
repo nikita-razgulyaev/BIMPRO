@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIMPRO</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/icon.png">
+</head>
+
+<body>
+  <div class="body-container">
+    <header>
+      <div class="container" id="container1">
+        <a onclick="scrollToHome()"><img src="images/header-logo.png" alt="Image" class="header__icon-image"></a>
+        <nav class="header__links">
+          <div class="header__link" id="service" onclick="scrollToServices()">
+            <a>Услуги</a>
+          </div>
+          <div class="header__link" onclick="scrollToAdvantage()">
+            <a>Преимущества</a>
+          </div>
+          <div class="header__link" onclick="scrollToProjects()">
+            <a>Проекты</a>
+          </div>
+          <div class="header__link" onclick="scrollToTeam()">
+            <a>Команда</a>
+          </div>
+          <div class="header__link" onclick="scrollToGuarantee()">
+            <a>Гарантии</a>
+          </div>
+          <div class="header__link" onclick="scrollToContacts()">
+            <a>Контакты</a>
+          </div>
+        </nav>
+        <div class="header__contacts">
+          <p class="header__phone-number">+7 812 330 10 40</p>
+          <p class="header__email">project@bimpro.ru</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <div class="container" id="container2">
+        <div class="header__dropdown-menu" id="dropdownMenu">
+          <ul class="header__dropdown-items">
+            <li class="header__dropdown-item header__dropdown-splitting" onclick="scrollToServiceOne()">Визуализация
+              комплексной застройки</li>
+            <li class="header__dropdown-item header__dropdown-splitting" onclick="scrollToServiceTwo()">Архитектурная
+              визуализация</li>
+            <li class="header__dropdown-item header__dropdown-splitting" onclick="scrollToServiceThree()">Интерьерная
+              визуализация</li>
+            <li class="header__dropdown-item header__dropdown-splitting" onclick="scrollToServiceFour()">Предметная и
+              рекламная визуализация</li>
+            <li class="header__dropdown-item header__dropdown-splitting" onclick="scrollToServiceFive()">3D, VR и видео
+              материалы</li>
+            <li class="header__dropdown-item" onclick="scrollToServiceSix()">Дополнительные материалы</li>
+          </ul>
+        </div>
+        <button class="nav__item" id="feedbackButton1">Бесплатная консультация</button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="start-page" id="home">
+        <div class="container" id="container3">
+          <div class="start-page__content">
+            <div class="start-page__offer">
+              <p class="start-page__title">Визуализация любой сложности</p>
+              <p class="start-page__text">Создадим 3D Визуализации, презентационные интерактивные и VR-материалы,
+                анимации,
+                жилой и коммерческой недвижимости.</p>
+              <button class="start-page-button" id="feedbackButton2">Рассчитать стоимость проекта</button>
+            </div>
+            <div class="start-page__slider-container">
+              <div class="start-page__slider">
+                <div class="start-page__slide --1 start-page__slide--active">
+                  <div class="start-page__slide-blackout">
+                    <p class="start-page__slide-title">жилые комплексы</p>
+                  </div>
+                </div>
+                <div class="start-page__slide --2">
+                  <div class="start-page__slide-blackout">
+                    <p class="start-page__slide-title">архитектура</p>
+                  </div>
+                </div>
+                <div class="start-page__slide --3">
+                  <div class="start-page__slide-blackout">
+                    <p class="start-page__slide-title">интерьеры</p>
+                  </div>
+                </div>
+                <div class="start-page__slide --4">
+                  <div class="start-page__slide-blackout">
+                    <p class="start-page__slide-title">рекламная визуализация</p>
+                  </div>
+                </div>
+                <div class="start-page__slide --5">
+                  <div class="start-page__slide-blackout">
+                    <p class="start-page__slide-title">3D и VR материалы</p>
+                  </div>
+                </div>
+                <div class="start-page__slide --6">
+                  <div class="start-page__slide-blackout">
+                    <p class="start-page__slide-title">дополнительные материалы</p>
+                  </div>
+                </div>
+                <div class="start-page__scroll-bar-container">
+                  <button class="start-page__prev-button" id="prevBtn">
+                    <hr class="start-page__button-arrow --upper-part">
+                    <hr class="start-page__button-arrow --lower-part">
+                  </button>
+                  <hr class="start-page__scroll-bar" id="scrollBar">
+                  <hr class="start-page__scroll-thumb" id="scrollThumb">
+                  <button class="start-page__next-button" id="nextBtn">
+                    <hr class="start-page__button-arrow --upper-part">
+                    <hr class="start-page__button-arrow --lower-part">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-page">
+        <div class="container">
+          <div class="service-page__title">наши услуги</div>
+          <div class="service-page__items">
+            <div class="service-page__item" id="firstService" onclick="scrollToServiceOne()">
+              <img src="images/visual.png" alt="Image" class="service-page__item-image--1">
+              <p class="service-page__item-text--1">Визуализация
+                комплексной застройки</p>
+            </div>
+            <div class="service-page__item" id="secondService" onclick="scrollToServiceTwo()">
+              <img src="images/architecture.png" alt="Image" class="service-page__item-image--2">
+              <p class="service-page__item-text--2">Архитектурная
+                визуализация</p>
+            </div>
+            <div class="service-page__item" id="threeService" onclick="scrollToServiceThree()">
+              <img src="images/interior.png" alt="Image" class="service-page__item-image--3">
+              <p class="service-page__item-text--3">Интерьерная
+                визуализация</p>
+            </div>
+            <div class="service-page__item" id="fourService" onclick="scrollToServiceFour()">
+              <img src="images/subject visualization.png" alt="Image" class="service-page__item-image--4">
+              <p class="service-page__item-text--4">Предметная и рекламная
+                визуализация</p>
+            </div>
+            <div class="service-page__item" id="fiveService" onclick="scrollToServiceFive()">
+              <img src="images/VR.png" alt="Image" class="service-page__item-image--5">
+              <p class="service-page__item-text--5">3D, VR и видео
+                материалы</p>
+            </div>
+            <div class="service-page__item" id=" sixService" onclick="scrollToServiceSix()">
+              <img src="images/additional materials.png" alt="Image" class="service-page__item-image--6">
+              <p class="service-page__item-text--6">Дополнительные
+                материалы</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefit">
+        <div class="container">
+          <div class="benefit__container">
+            <hr class="benefit__vertical-line--1">
+            <hr class="benefit__slash-line--1">
+            <div class="benefit__benefit-name--1">
+              <p><span>Скидка до 50 %</span></p>
+              <p>при заказе от 20 000м<sup> 2</sup></p>
+            </div>
+            <hr class="benefit__vertical-line--2">
+            <hr class="benefit__slash-line--2">
+            <div class="benefit__benefit-name--2">
+              <p><span>Скидка 5%</span></p>
+              <p>на последующие заказы</p>
+            </div>
+            <hr class="benefit__vertical-line--3">
+            <hr class="benefit__slash-line--3">
+            <div class="benefit__benefit-name--3">
+              <p><span>5 рабочих дней</span></p>
+              <p>средний срок исполнения</p>
+            </div>
+            <hr class="benefit__vertical-line--4">
+            <hr class="benefit__slash-line--4">
+            <div class="benefit__benefit-name--4">
+              <p><span>Бесплатная консультация</span></p>
+              <p>по любым вопросам</p>
+            </div>
+            <hr class="benefit__vertical-line--5">
+            <hr class="benefit__slash-line--5">
+            <hr class="benefit__horisontal-line">
+          </div>
+        </div>
+      </section>
+
+      <section class="speed-sales">
+        <div class="container">
+          <div class="speed-sales__description">
+            <figure class="speed-sales__figure">
+              <div class="speed-sales__figure-frames">
+                <p class="speed-sales__figure-number-percentages" id="percent">+20</p>
+              </div>
+              <div class="speed-sales__figure-filling">
+                <img src="images/percent.png" alt="Image" class="speed-sales__figure-percent-symbol">
+              </div>
+            </figure>
+            <p class="speed-sales__reference">*По данным ГК «Первый Трест» № 12 среди российских застройщиков в рейтинге
+              ЕРЗ, клиент «БИМПРО»</p>
+            <p class="speed-sales__title">Визуализированная недвижимость продается на 20% быстрее!</p>
+          </div>
+        </div>
+        <div class="speed-sales__image-container">
+          <img src="images/speed sales.png" alt="Image" class="speed-sales__image">
+        </div>
+      </section>
+
+      <section class="answers-to-questions" id="advantages">
+        <div class="container">
+          <div class="answers-to-questions__questions">
+            <div class="answers-to-questions__question --1 active">
+              <div class="answers-to-questions__question-arrow">
+                <div class="answers-to-questions__question-part-arrow --upper-part"></div>
+                <div class="answers-to-questions__question-part-arrow --lower-part"></div>
+              </div>
+              <p class="answers-to-questions__questions-name">как <span>мы поможем вашему бизнесу</span></p>
+            </div>
+            <hr class="answers-to-questions__line">
+            <div class="answers-to-questions__question --2">
+              <div class="answers-to-questions__question-arrow">
+                <div class="answers-to-questions__question-part-arrow --upper-part"></div>
+                <div class="answers-to-questions__question-part-arrow --lower-part"></div>
+              </div>
+              <p class="answers-to-questions__questions-name">кому <span>наши решения помогут</span></p>
+            </div>
+            <hr class="answers-to-questions__line">
+            <div class="answers-to-questions__question --3">
+              <div class="answers-to-questions__question-arrow">
+                <div class="answers-to-questions__question-part-arrow --upper-part"></div>
+                <div class="answers-to-questions__question-part-arrow --lower-part"></div>
+              </div>
+              <p class="answers-to-questions__questions-name">подробнее <span>о нашей работе</span></p>
+            </div>
+          </div>
+          <div class="answers-to-questions__answers --1 active">
+            <div class="answers-to-questions__answer --1 active">
+              <div class="answers-to-questions__answer-title">
+                <div class="answers-to-questions__answer-arrow">
+                  <div class="answers-to-questions__answer-part-arrow --left-part"></div>
+                  <div class="answers-to-questions__answer-part-arrow --right-part"></div>
+                </div>
+                <p class="answers-to-questions__answer-name">Снизить количество ошибок</p>
+              </div>
+              <p class="answers-to-questions__answer-text">Перспективные изображения являются неотъемлемой частью пакета
+                документов АР, используются в ходе проведения ремонтных работ и необходимы при авторском надзоре
+              </p>
+            </div>
+            <div class="answers-to-questions__answer --1">
+              <div class="answers-to-questions__answer-title">
+                <div class="answers-to-questions__answer-arrow">
+                  <div class="answers-to-questions__answer-part-arrow --left-part"></div>
+                  <div class="answers-to-questions__answer-part-arrow --right-part"></div>
+                </div>
+                <p class="answers-to-questions__answer-name">Согласовать проект с заказчиком</p>
+              </div>
+              <p class="answers-to-questions__answer-text">Фотореалистичные 3D-визуализации в разы повышают качество и
+                скорость координации и согласований с заказчиком
+              </p>
+            </div>
+            <div class="answers-to-questions__answer --1">
+              <div class="answers-to-questions__answer-title">
+                <div class="answers-to-questions__answer-arrow">
+                  <div class="answers-to-questions__answer-part-arrow --left-part"></div>
+                  <div class="answers-to-questions__answer-part-arrow --right-part"></div>
+                </div>
+                <p class="answers-to-questions__answer-name">Повысить привлекательность проекта</p>
+              </div>
+              <div class="answers-to-questions__answer-text">
+                <p>Созданные нами визуализации помогут:</p>
+                <ul>
+                  <li class="--1">повысить привлекательность проекта</li>
+                  <li class="--2">привлечь новых клиентов</li>
+                  <li class="--3">сократить срок продаж</li>
+                  <li class="--4">поднять стоимость метра</li>
+                </ul>
+              </div>
+            </div>
+            <div class="answers-to-questions__answer --1">
+              <div class="answers-to-questions__answer-title">
+                <div class="answers-to-questions__answer-arrow">
+                  <div class="answers-to-questions__answer-part-arrow --left-part"></div>
+                  <div class="answers-to-questions__answer-part-arrow --right-part"></div>
+                </div>
+                <p class="answers-to-questions__answer-name">Выделиться на фоне конкуррентов</p>
+              </div>
+              <p class="answers-to-questions__answer-text">Наличие дополнительных презентационных материалов, в том
+                числе
+                интерактивных (VR-туры, 3D-облеты, анимация), выделит проект на рынке
+              </p>
+            </div>
+          </div>
+          <div class="answers-to-questions__answers --2">
+            <div class="answers-to-questions__answer --2 active">
+              <div class="answers-to-questions__answer-title">
+                <div class="answers-to-questions__answer-arrow">
+                  <div class="answers-to-questions__answer-part-arrow --left-part"></div>
+                  <div class="answers-to-questions__answer-part-arrow --right-part"></div>
+                </div>
+                <p class="answers-to-questions__answer-name">Застройщику и девелоперу</p>
+              </div>
+              <div class="answers-to-questions__answer-text">
+                <p>наши визуализации помогут:</p>
+                <ul>
+                  <li>повысить продажи</li>
+                  <li>подробно и наглядно показать, что за продукт они предлагают своим клиентам</li>
+                  <li>создать визуальный образ проекта</li>
+                  <li>улучшить имидж компании на рынке за счет портфолио</li>
+                </ul>
+              </div>
+            </div>
+            <div class="answers-to-questions__answer --2">
+              <div class="answers-to-questions__answer-title">
+                <div class="answers-to-questions__answer-arrow">
+                  <div class="answers-to-questions__answer-part-arrow --left-part"></div>
+                  <div class="answers-to-questions__answer-part-arrow --right-part"></div>
+                </div>
+                <p class="answers-to-questions__answer-name">Дизайнеру и архитектору</p>
+              </div>
+              <div class="answers-to-questions__answer-text">
+                <p>наш продукт поможет:</p>
+                <ul>
+                  <li>максимально быстро согласовать дизайн-решения с заказчиком и учесть все его пожелания</li>
+                  <li>привлечь новых клиентов</li>
+                  <li>сократить срок продаж</li>
+                  <li>увидеть будущую концепцию проекта, внести необходимые изменения на этапе эскизирования</li>
+                  <li>пополнить портфолио фотореалистичными визуализациями своих проектов, наиболее полно отражающих
+                    уровень
+                    своего профессионализма</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="answers-to-questions__answers --3">
+            <div class="answers-to-questions__answer --3 active">
+              <div class="answers-to-questions__answer-title">
+                <div class="answers-to-questions__answer-arrow">
+                  <div class="answers-to-questions__answer-part-arrow --left-part"></div>
+                  <div class="answers-to-questions__answer-part-arrow --right-part"></div>
+                </div>
+                <p class="answers-to-questions__answer-name">Проекты, с которыми мы работаем</p>
+              </div>
+              <div class="answers-to-questions__answer-text">
+                <ul>
+                  <li>Жилые комплексы</li>
+                  <li>Общественные здания</li>
+                  <li>Благоустройства территории</li>
+                  <li>Общественные пространства</li>
+                  <li>Ландшафтный дизайн</li>
+                  <li>Градостроительная визуализация</li>
+                </ul>
+              </div>
+            </div>
+            <div class="answers-to-questions__answer --3">
+              <div class="answers-to-questions__answer-title">
+                <div class="answers-to-questions__answer-arrow">
+                  <div class="answers-to-questions__answer-part-arrow --left-part"></div>
+                  <div class="answers-to-questions__answer-part-arrow --right-part"></div>
+                </div>
+                <p class="answers-to-questions__answer-name">Что мы учитываем при визуализации</p>
+              </div>
+              <div class="answers-to-questions__answer-text">
+                <ul>
+                  <li>Мы внимательны к композиции кадра, естественности освещения и материалам</li>
+                  <li>привлечь новых клиентов</li>
+                  <li>сократить срок продаж</li>
+                  <li>поднять стоимость метра</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-steps">
+        <div class="container">
+          <p class="work-steps__title"><span>5 шагов</span> работы с нами</p>
+          <div class="work-steps__steps-container">
+
+            <div class="work-steps__step">
+              <p class="work-steps__step-number">1</p>
+              <div class="work-steps__step-name">
+                <p><span>Оставьте</span></p>
+                <p>заявку</p>
+              </div>
+            </div>
+
+            <div class="work-steps__arrow-container">
+              <hr class="work-steps__arrow --horizontal-line">
+              <hr class="work-steps__arrow --upper-line">
+              <hr class="work-steps__arrow --lower-line">
+            </div>
+
+            <div class="work-steps__step">
+              <p class="work-steps__step-number">2</p>
+              <div class="work-steps__step-name">
+                <p><span>Получите</span></p>
+                <p>бесплатный расчет стоимости и сроков</p>
+              </div>
+            </div>
+
+            <div class="work-steps__arrow-container">
+              <hr class="work-steps__arrow --horizontal-line">
+              <hr class="work-steps__arrow --upper-line">
+              <hr class="work-steps__arrow --lower-line">
+            </div>
+
+            <div class="work-steps__step">
+              <p class="work-steps__step-number">3</p>
+              <div class="work-steps__step-name">
+                <p><span>Заключите договор</span></p>
+                <p>и внесите аванс</p>
+              </div>
+            </div>
+
+            <div class="work-steps__arrow-container">
+              <hr class="work-steps__arrow --horizontal-line">
+              <hr class="work-steps__arrow --upper-line">
+              <hr class="work-steps__arrow --lower-line">
+            </div>
+
+            <div class="work-steps__step">
+              <p class="work-steps__step-number">4</p>
+              <div class="work-steps__step-name">
+                <p><span>Мы разработаем </span></p>
+                <p>визуализации</p>
+              </div>
+            </div>
+
+            <div class="work-steps__arrow-container">
+              <hr class="work-steps__arrow --horizontal-line">
+              <hr class="work-steps__arrow --upper-line">
+              <hr class="work-steps__arrow --lower-line">
+            </div>
+
+            <div class="work-steps__step">
+              <p class="work-steps__step-number">5</p>
+              <div class="work-steps__step-name">
+                <p><span>Получите</span></p>
+                <p>готовые материалы</p>
+              </div>
+            </div>
+
+          </div>
+          <button class="work-steps__button" id="feedbackButton3">Оставить заявку</button>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+
+        <div class="service__overlay" id="overlay"></div>
+
+        <div class="services__service --1" id="service-1">
+          <div class="service__image-container">
+            <img src="images/service-1-1.png" alt="Image" class="service__image --1">
+            <img src="images/service-1-2.png" alt="Image" class="service__image --2">
+            <div class="services__image-blackout">
+              <div class="services__scroll-bar-container">
+                <button class="services__prev-button --1">
+                  <hr class="services__button-arrow --upper-part">
+                  <hr class="services__button-arrow --lower-part">
+                </button>
+                <hr class="services__scroll-bar">
+                <hr class="services__scroll-thumb --1">
+                <button class="services__next-button --1">
+                  <hr class="services__button-arrow --upper-part">
+                  <hr class="services__button-arrow --lower-part">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <p class="service__title">Визуализация <br> жилых комплексов</p>
+            <div class="service__answer-to-question --1">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">Выделиться на фоне конкуррентов</p>
+              </div>
+              <div class="service__content">
+                <p>Фотореалистичная визуализация любых объектов комплексной застройки от 1 га на основе проектной
+                  документации, чертежей или BIM-модели.</p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text">Стоимость зависит от сложности ТЗ. <a id="firstOpenPopupTSOne">Посмотреть
+                      состав технического
+                      задания.</a> Вы получите 4-6 перспективных изображений от 1800px до 3840px по
+                    длинной стороне.</p>
+                </div>
+                <img src="images/service-1-add-1.png" alt="Image">
+              </div>
+            </div>
+            <div class="service__answer-to-question --2">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">Визуализация благоустройства территории</p>
+              </div>
+              <div class="service__content">
+                <p>Фотореалистичная визуализация любых объектов благоустройства территорий от 1 га на основе проектной
+                  документации, чертежей или BIM-модели.</p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text">Стоимость зависит от сложности ТЗ. <a id="secondOpenPopupTSOne">Посмотреть
+                      состав технического
+                      задания.</a>
+                    Вы получите 4-6 перспективных изображений от 1800px до 3840px по
+                    длинной стороне.
+                  </p>
+                </div>
+                <img src="images/service-1-add-2.png" alt="Image">
+              </div>
+            </div>
+            <button class="service__button" id="feedbackButton4">Оставить заявку</button>
+          </div>
+        </div>
+
+        <div class="service__popup-TS" id="popupTSOne">
+          <button class="service__close-button --TS" id="closePopupTSOne">
+            <div class="service__close-button-line --TS --1"></div>
+            <div class="service__close-button-line --TS --2"></div>
+          </button>
+          <div class="service__popup-frame">
+            <p class="service__popup-title">состав технического задания</p>
+            <p class="service__popup-subtitle">для визуализации комплексной застройки</p>
+            <p class="service__popup-email">Все материалы необходимо выслать на электронный адрес
+              <span>project@bimpro.ru</span>
+            </p>
+            <p class="service__popup-list-title">Техническое задание на визуализацию комплексной застройки должно
+              включать
+              следующие документы и чертежи:</p>
+            <ul class="service__popup-list">
+              <li class="service__popup-list-item">
+                <p>• </p>
+                <p>Фасады здания</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Планы этажей и кровли</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Разрезы здания</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Генеральный план территории с привязками зданий, расположением объектов инфраструктуры, расстановкой
+                  элементов благоустройства и указанием видовых точек</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Подборка основных отделочных материалов и текстур с указанием их местоположения на объектах</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Фотографии или изображения элементов декорирования фасадов здания с указанием габаритных размеров</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Фотографии и изображения объектов благоустройства территории с указанием габаритных размеров</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Фотографии и изображения комплексной застройки похожей стилистики, настроения или оформления</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Точное текстовое описание задания для визуализатора</p>
+              </li>
+            </ul>
+            <p class="service__popup-format-materials">Предпочтительный формат предоставляемых материалов: AutoCAD или
+              Revit.</p>
+          </div>
+        </div>
+
+        <div class="services__service --2" id="service-2">
+          <div class="service__image-container">
+            <img src="images/service-2-1.png" alt="Image" class="service__image --3">
+            <img src="images/service-2-2.png" alt="Image" class="service__image --4">
+            <div class="services__image-blackout">
+              <div class="services__scroll-bar-container">
+                <button class="services__prev-button --2">
+                  <hr class="services__button-arrow --upper-part">
+                  <hr class="services__button-arrow --lower-part">
+                </button>
+                <hr class="services__scroll-bar">
+                <hr class="services__scroll-thumb --2">
+                <button class="services__next-button --2">
+                  <hr class="services__button-arrow --upper-part">
+                  <hr class="services__button-arrow --lower-part">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <p class="service__title">Архитектурная<br>
+              визуализация</p>
+            <div class="service__overlay" id="overlay"></div>
+            <div class="service__answer-to-question --1">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">Визуализация жилых зданий</p>
+              </div>
+              <div class="service__content">
+                <p>Фотореалистичная визуализация жилых объектов капитального строительства с прилегающей территорией, на
+                  площади от 5000 м2 на основе проектной документации, чертежей или BIM-модели.</p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text">Стоимость зависит от сложности ТЗ. <a id="firstOpenPopupTSTwo">Посмотреть
+                      состав технического
+                      задания.</a>
+                    Вы получите 4-6 перспективных изображений от 1800px до 3840px по
+                    длинной стороне.
+                  </p>
+                </div>
+                <img src="images/service-2-add-1.png" alt="Image">
+              </div>
+            </div>
+            <div class="service__answer-to-question --2">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">Визуализация общественных, промышленных
+                  и складских зданий</p>
+              </div>
+              <div class="service__content">
+                <p>Фотореалистичная визуализация общественных и промышленных объектов капитального строительства с
+                  прилегающей территорией, на площади от 5000 м2 на основе проектной документации, чертежей или
+                  BIM-модели.</p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text">Стоимость зависит от сложности ТЗ. <a id="secondOpenPopupTSTwo">Посмотреть
+                      состав технического
+                      задания.</a>
+                    Вы получите 4-6 перспективных изображений от 1800px до 3840px по
+                    длинной стороне.
+                  </p>
+                </div>
+                <img src="images/service-2-add-2.png" alt="Image">
+              </div>
+            </div>
+            <button class="service__button" id="feedbackButton5">Оставить заявку</button>
+          </div>
+        </div>
+
+        <div class="service__popup-TS" id="popupTSTwo">
+          <button class="service__close-button --TS" id="closePopupTSTwo">
+            <div class="service__close-button-line --TS --1"></div>
+            <div class="service__close-button-line --TS --2"></div>
+          </button>
+          <div class="service__popup-frame">
+            <p class="service__popup-title">состав технического задания</p>
+            <p class="service__popup-subtitle">для архитектурной визуализации</p>
+            <p class="service__popup-email">Все материалы необходимо выслать на электронный адрес
+              <span>project@bimpro.ru</span>
+            </p>
+            <p class="service__popup-list-title">Техническое задание на визуализацию комплексной застройки должно
+              включать
+              следующие документы и чертежи:</p>
+            <ul class="service__popup-list">
+              <li class="service__popup-list-item">
+                <p>• </p>
+                <p>Фасады здания</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Планы этажей и кровли</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Разрезы здания</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Генеральный план территории с привязками зданий, расположением объектов инфраструктуры, расстановкой
+                  элементов благоустройства и указанием видовых точек</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Подборка основных отделочных материалов и текстур с указанием их местоположения на объектах</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Фотографии или изображения элементов декорирования фасадов здания с указанием габаритных размеров</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Фотографии и изображения объектов благоустройства территории с указанием габаритных размеров</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Фотографии и изображения комплексной застройки похожей стилистики, настроения или оформления</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Точное текстовое описание задания для визуализатора</p>
+              </li>
+            </ul>
+            <p class="service__popup-format-materials">Предпочтительный формат предоставляемых материалов: AutoCAD или
+              Revit.</p>
+          </div>
+        </div>
+
+        <div class="services__service --3" id="service-3">
+          <div class="service__image-container">
+            <img src="images/service-3-1.png" alt="Image" class="service__image --5">
+            <img src="images/service-3-2.png" alt="Image" class="service__image --6">
+            <div class="services__image-blackout">
+              <div class="services__scroll-bar-container">
+                <button class="services__prev-button --3">
+                  <hr class="services__button-arrow --upper-part">
+                  <hr class="services__button-arrow --lower-part">
+                </button>
+                <hr class="services__scroll-bar">
+                <hr class="services__scroll-thumb --3">
+                <button class="services__next-button --3">
+                  <hr class="services__button-arrow --upper-part">
+                  <hr class="services__button-arrow --lower-part">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <p class="service__title">Интерьерная<br> визуализация</p>
+            <div class="service__answer-to-question --1">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">Визуализация общественных пространств</p>
+              </div>
+              <div class="service__content">
+                <p>Фотореалистичная визуализация любых общественных интерьеров от 1000 м2 на основе проектной
+                  документации, чертежей или BIM-модели.</p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text">Стоимость зависит от сложности ТЗ.
+                    <a id="firstOpenPopupTSThree">Посмотреть состав технического задания.</a>
+                    Вы получите 4-6 перспективных изображений от 1800px до 3840px по
+                    длинной стороне.
+                  </p>
+                </div>
+                <img src="images/service-3-add-1.png" alt="Image">
+              </div>
+            </div>
+            <div class="service__answer-to-question --2">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">Комплексная визуализация жилых помещений</p>
+              </div>
+              <div class="service__content">
+                <p>Фотореалистичная визуализация жилых интерьеров от 500 м2 на основе проектной документации, чертежей
+                  или
+                  BIM-модели.</p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text">Стоимость зависит от сложности ТЗ.
+                    <a id="secondOpenPopupTSThree">Посмотреть состав технического задания.</a>
+                    Вы получите 4-6 перспективных изображений от 1800px до 3840px по
+                    длинной стороне.
+                  </p>
+                </div>
+                <img src="images/service-3-add-2.png" alt="Image">
+              </div>
+            </div>
+            <button class="service__button" id="feedbackButton6">Оставить заявку</button>
+          </div>
+        </div>
+
+        <div class="service__popup-TS" id="popupTSThree">
+          <button class="service__close-button --TS" id="closePopupTSThree">
+            <div class="service__close-button-line --TS --1"></div>
+            <div class="service__close-button-line --TS --2"></div>
+          </button>
+          <div class="service__popup-frame">
+            <p class="service__popup-title">состав технического задания</p>
+            <p class="service__popup-subtitle">для интерьерной визуализации</p>
+            <p class="service__popup-email">Все материалы необходимо выслать на электронный адрес
+              <span>project@bimpro.ru</span>
+            </p>
+            <p class="service__popup-list-title">Техническое задание на интерьерную визуализацию должно включать
+              следующие
+              документы и чертежи:</p>
+            <ul class="service__popup-list">
+              <li class="service__popup-list-item">
+                <p>• </p>
+                <p>План помещения с расстановкой мебели</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>План полов</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>План потолков</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>План освещения</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Развертки стен</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Подборка основных отделочных материалов и текстур с указанием их местоположения в интерьере</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Подборка используемой мебели, освещения, техники и декора со ссылками на библиотеку 3d моделей, сайты
+                  производителей или указанием артикулов</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Подборка мебели, освещения, техники и декора индивидуального изготовления с указанием размеров</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Фотографии и изображения интерьеров похожей стилистики, настроения или оформления</p>
+              </li>
+            </ul>
+            <p class="service__popup-format-materials">Предпочтительный формат предоставляемых материалов: AutoCAD или
+              Revit.</p>
+          </div>
+        </div>
+
+        <div class="services__service --4" id="service-4">
+          <div class="service__image-container">
+            <img src="images/service-4-1.png" alt="Image" class="service__image --7">
+            <img src="images/service-4-2.png" alt="Image" class="service__image --8">
+            <div class="services__image-blackout">
+              <div class="services__scroll-bar-container">
+                <button class="services__prev-button --4">
+                  <hr class="services__button-arrow --upper-part">
+                  <hr class="services__button-arrow --lower-part">
+                </button>
+                <hr class="services__scroll-bar">
+                <hr class="services__scroll-thumb --4">
+                <button class="services__next-button --4">
+                  <hr class="services__button-arrow --upper-part">
+                  <hr class="services__button-arrow --lower-part">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <p class="service__title">Рекламная и предметная<br> визуализация</p>
+            <div class="service__answer-to-question --1">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">Визуализация общественных пространств</p>
+              </div>
+              <div class="service__content">
+                <p>Фотореалистичная визуализация любых общественных интерьеров от 1000 м2 на основе проектной
+                  документации, чертежей или BIM-модели.</p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text">Стоимость зависит от сложности ТЗ.
+                    <a id="firstOpenPopupTSFour">Посмотреть состав технического задания.</a>
+                    Вы получите 4-6 перспективных изображений от 1800px до 3840px по
+                    длинной стороне.
+                  </p>
+                </div>
+                <img src="images/service-4-add-1.png" alt="Image">
+              </div>
+            </div>
+            <button class="service__button" id="feedbackButton7">Оставить заявку</button>
+          </div>
+        </div>
+
+        <div class="service__popup-TS" id="popupTSFour">
+          <button class="service__close-button --TS" id="closePopupTSFour">
+            <div class="service__close-button-line --TS --1"></div>
+            <div class="service__close-button-line --TS --2"></div>
+          </button>
+          <div class="service__popup-frame">
+            <p class="service__popup-title">состав технического задания</p>
+            <p class="service__popup-subtitle">для рекламной визуализации мебели, предметов декора, освещения</p>
+            <p class="service__popup-email">Все материалы необходимо выслать на электронный адрес
+              <span>project@bimpro.ru</span>
+            </p>
+            <p class="service__popup-list-title">Техническое задание на создание визуализаций для рекламы мебели,
+              декора,
+              освещения и т.п. должно включать следующие материалы:</p>
+            <ul class="service__popup-list">
+              <li class="service__popup-list-item">
+                <p>• </p>
+                <p>Модели от производителя мебели, декора, освещения, которые необходимо разместить в интерьере</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Текстуры отделки мебели, декора, освещения или отделочных материалов в высоком разрешении</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Фотографии и изображения интерьеров похожей стилистики, настроения или оформления</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Точное текстовое описание задания для визуализатора с комментариями и требованиями к проекту</p>
+              </li>
+            </ul>
+            <p class="service__popup-format-materials">Предпочтительный формат предоставляемых материалов: AutoCAD или
+              Revit.</p>
+          </div>
+        </div>
+
+        <div class="services__service --5" id="service-5">
+          <div class="service__image-container">
+            <div class="service__image --9" id="openPopupOne">
+              <img src="images/service-5-1.png" alt="Image">
+              <div class="service__image-full-blackout">
+                <img src="images/service-vr.png" alt="Image" class="services__vr-image">
+              </div>
+            </div>
+            <div class="service__image --10" id="openPopupTwo">
+              <img src="images/service-5-2.png" alt="Image">
+              <div class="service__image-full-blackout">
+                <img src="images/pause.png" alt="Image" class="services__pause-image">
+              </div>
+            </div>
+            <div class="services__image-blackout">
+              <div class="services__scroll-bar-container">
+                <button class="services__prev-button --5">
+                  <hr class="services__button-arrow --upper-part">
+                  <hr class="services__button-arrow --lower-part">
+                </button>
+                <hr class="services__scroll-bar">
+                <hr class="services__scroll-thumb --5">
+                <button class="services__next-button --5">
+                  <hr class="services__button-arrow --upper-part">
+                  <hr class="services__button-arrow --lower-part">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <p class="service__title">3D, VR и видео материалы</p>
+            <p class="service__subtitle">Дополнительные услуги к любому из основных видов визуализации</p>
+            <div class="service__answer-to-question --1">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">VR и 3D виртуальные туры</p>
+              </div>
+              <div class="service__content">
+                <p>Это способ реалистичного отображения трехмерного пространства, с помощю сферических панорам и
+                  возможностью их
+                  вращения на 360°.</p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text"><a id="firstOpenPopupTSFive">Посмотреть состав технического задания.</a>
+                    Вы получаете готовый 3D тур (от 6 видовых точек), размещенный на платформе KUULA и исходные панорамы
+                    в
+                    разрешении 6000 Х 3000 pxl.
+                  </p>
+                </div>
+                <img src="images/service-5-add-1.png" alt="Image">
+              </div>
+            </div>
+            <div class="service__answer-to-question --2">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">3D облет 360°</p>
+              </div>
+              <div class="service__content">
+                <p>Это способ реалистичного отображения трехмерного объекта, с возможностью его
+                  вращения вокруг своей оси. </p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text"><a id="secondOpenPopupTSFive">Посмотреть состав технического задания.</a>Вы
+                    получаете покадровую анимацию вращения вашего объекта вокруг своей оси
+                    и видео в формате mp4
+                  </p>
+                </div>
+                <img src="images/service-5-add-2.png" alt="Image">
+              </div>
+            </div>
+            <div class="service__answer-to-question --3">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">3D видео туры</p>
+              </div>
+              <div class="service__content">
+                <p>Это способ реалистичного отображения трехмерного пространства, в формате ролика на YouYube с
+                  возможностью его
+                  прокрутки на 360°.</p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text"><a id="thirdOpenPopupTSFive">Посмотреть состав технического задания.</a>
+                    Вы получаете видео в формате .mp4 в разрешении FullHD (1920 Х 1080).
+                  </p>
+                </div>
+                <img src="images/service-5-add-3.png" alt="Image">
+              </div>
+            </div>
+            <div class="service__answer-to-question --4">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">Анимация</p>
+              </div>
+              <div class="service__content">
+                <p>Это презентационный видеоматериал, с помощью которого можно выгодно и доступно показать все
+                  пространственные и художественные особенности проекта.</p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text">Стоимость зависит от продолжительности видео и сложности ТЗ.
+                    <a id="fourthOpenPopupTSFive">Посмотреть состав технического задания.</a>
+                    Вы получаете видео в формате .mp4 в разрешении FullHD (1920 Х 1080).
+                  </p>
+                </div>
+                <img src="images/service-5-add-4.png" alt="Image">
+              </div>
+            </div>
+            <button class="service__button" id="feedbackButton8">Оставить заявку</button>
+          </div>
+        </div>
+
+        <div class="service__popup-TS" id="popupTSFive">
+          <button class="service__close-button --TS" id="closePopupTSFive">
+            <div class="service__close-button-line --TS --1"></div>
+            <div class="service__close-button-line --TS --2"></div>
+          </button>
+          <div class="service__popup-frame">
+            <p class="service__popup-title">состав технического задания</p>
+            <p class="service__popup-subtitle">для создания видео, анимации или тура</p>
+            <p class="service__popup-email">Все материалы необходимо выслать на электронный адрес
+              <span>project@bimpro.ru</span>
+            </p>
+            <p class="service__popup-list-title">Работа над видео/анимацией/туром ведется непосредственно после
+              согласования статичных изображений интерьерной или экстерьерной визуализации, так как на этапе создания
+              анимации уже не корректируются освещение, материалы и геометрия сцены.
+              Для более точного результата можно дать следующие описания:</p>
+            <ul class="service__popup-list">
+              <li class="service__popup-list-item">
+                <p>• </p>
+                <p>Краткий текстовый сценарий видео/анимациии/тура</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Отметки, указания или сообщения, которые следует разместить</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Музыкальное или голосовое сопровождение (если нужно)</p>
+              </li>
+              <li class="service__popup-list-item">
+                <p>•</p>
+                <p>Примеры видеовидео/анимациии/тура похожей стилистики, настроения или оформления</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service__popup" id="popupOne">
+          <button class="service__close-button" id="closePopupOne">
+            <div class="service__close-button-line --1"></div>
+            <div class="service__close-button-line --2"></div>
+          </button>
+          <iframe width="100%" height="100%" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer"
+            allowfullscreen scrolling="no"
+            src="https://kuula.co/share/collection/7v2JJ?logo=1&info=1&fs=0&vr=1&zoom=1&sd=1&initload=0&autorotate=0.18&thumbs=1&inst=ru"></iframe>
+        </div>
+
+        <div class="service__popup" id="popupTwo">
+          <button class="service__close-button" id="closePopupTwo">
+            <div class="service__close-button-line --1"></div>
+            <div class="service__close-button-line --2"></div>
+          </button>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/n-xnqNvvmms?si=7QMfrfOhDKhMHQVf"
+            title="YouTube video player" frameborder="o" border="none"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="services__service --6" id="service-6">
+          <div class="service__image-container">
+            <img src="images/service-6-1.png" alt="Image" class="service__image --11">
+            <img src="images/service-6-2.png" alt="Image" class="service__image --12">
+            <div class="services__image-blackout">
+              <div class="services__scroll-bar-container">
+                <button class="services__prev-button --6">
+                  <hr class="services__button-arrow --upper-part">
+                  <hr class="services__button-arrow --lower-part">
+                </button>
+                <hr class="services__scroll-bar">
+                <hr class="services__scroll-thumb --6">
+                <button class="services__next-button --6">
+                  <hr class="services__button-arrow --upper-part">
+                  <hr class="services__button-arrow --lower-part">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <p class="service__title">дополнительные<br>
+              презентационные материалы</p>
+            <p class="service__subtitle">Дополнительные услуги к любому из основных видов визуализации</p>
+            <div class="service__answer-to-question --1">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">Планировочные схемы</p>
+              </div>
+              <div class="service__content">
+                <p>Это графический 2D или 3D материал, представленный в виде оформленного и доработанного чертежа плана.
+                </p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text">Стоимость зависит то сложности ТЗ.
+                    Вы получаете изометрическое изображение в разрешении от 1800px до 3840px.
+                  </p>
+                </div>
+                <img src="images/service-6-add-1.png" alt="Image">
+              </div>
+            </div>
+            <div class="service__answer-to-question --2">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">Визуализация генплана</p>
+              </div>
+              <div class="service__content">
+                <p>Это фотореалистиное изображение вашего генплана и дополнительный демонстрационный материал к
+                  основному
+                  пакету чертежей и документации АР.</p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text">Стоимость зависит от наличия и степени дополнительной детализации.
+                    Вы получаете изометрическое изображение в разрешении от 1800px до 3840px.
+                  </p>
+                </div>
+                <img src="images/service-6-add-2.png" alt="Image">
+              </div>
+            </div>
+            <div class="service__answer-to-question --3">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">Визуализация фасадов</p>
+              </div>
+              <div class="service__content">
+                <p>Это фотореалистиное изображение ваших фасадов и дополнительный демонстрационный материал к основному
+                  пакету чертежей и документации АР.</p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text">Стоимость зависит от наличия и степени дополнительной детализации.
+                    Вы получаете 1-4 изображения в разрешении от 1800px до 3840px.
+                  </p>
+                </div>
+                <img src="images/service-6-add-3.png" alt="Image">
+              </div>
+            </div>
+            <div class="service__answer-to-question --4">
+              <div class="service__question">
+                <div class="service__question-arrow">
+                  <div class="service__question-part-arrow --left-part"></div>
+                  <div class="service__question-part-arrow --right-part"></div>
+                </div>
+                <p class="service__question-name">Композиции с материалами</p>
+              </div>
+              <div class="service__content">
+                <p>Это красиво оформленное изображение для демонстрации основных отделочных материалов, текстиля или
+                  деталей проекта.</p>
+                <div class="service__reference">
+                  <hr class="service__line">
+                  <p class="service__text">Стоимость зависит от количества изображений.
+                    Вы получаете изображения в разрешении от 1800px до 3840px.
+                  </p>
+                </div>
+                <img src="images/service-6-add-4.png" alt="Image">
+              </div>
+            </div>
+            <button class="service__button" id="feedbackButton9">Оставить заявку</button>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <p class="projects__title">Какие проекты мы уже реализовали?</p>
+          <div class="projects__tags">
+            <div class="projects__tag" data-tag="tag1">#архитектура</div>
+            <div class="projects__tag" data-tag="tag2">#комплексная застройка</div>
+            <div class="projects__tag" data-tag="tag3">#интерьеры</div>
+            <div class="projects__tag" data-tag="tag4">#3D, VR, видео</div>
+            <div class="projects__tag" data-tag="tag5">#предметная визуализация</div>
+            <div class="projects__tag" data-tag="tag6">#генплан</div>
+            <div class="projects__tag" data-tag="tag7">#благоустройство</div>
+            <div class="projects__tag" data-tag="tag8">#анимация</div>
+            <div class="projects__tag" data-tag="tag9">#промышленные объекты</div>
+            <div class="projects__tag" data-tag="tag10">#дополнительные материалы</div>
+            <button class="projects__reset-button" id="resetTagButton">Сбросить фильтр</button>
+          </div>
+          <div class="projects__items" id="cardContainer">
+            <div class="column" id="column1">
+              <div class="projects__item --1" data-tag="tag2 tag4" id="card1">
+                <img src="images/project-1.png" alt="Image" class="projects__item-image">
+                <div class="projects__item-full-blackout"></div>
+                <div class="projects__item-bottom-blackout"></div>
+                <p class="projects__item-title">ЖК “Сенатор”</p>
+                <div class="projects__item-tags">
+                  <div class="projects__item-tag">#комплексная застройка</div>
+                  <div class="projects__item-tag">#3D, VR, видео</div>
+                </div>
+              </div>
+              <div class="projects__item --2" data-tag="tag1 tag2" id="card2">
+                <img src="images/project-2.png" alt="Image" class="projects__item-image">
+                <div class="projects__item-full-blackout"></div>
+                <div class="projects__item-bottom-blackout"></div>
+                <p class="projects__item-title">ЖК ”МЫСОВСКИЙ”</p>
+                <div class="projects__item-tags">
+                  <div class="projects__item-tag">#комплексная застройка</div>
+                  <div class="projects__item-tag">#архитектура</div>
+                </div>
+              </div>
+              <div class="projects__item --3" data-tag="tag3 tag4" id="card3">
+                <img src="images/project-3.png" alt="Image" class="projects__item-image">
+                <div class="projects__item-full-blackout"></div>
+                <div class="projects__item-bottom-blackout"></div>
+                <p class="projects__item-title">Вестибюль ЖК “GG”</p>
+                <div class="projects__item-tags">
+                  <div class="projects__item-tag">#интерьеры</div>
+                  <div class="projects__item-tag">#3D, VR, видео</div>
+                </div>
+              </div>
+              <div class="projects__item --4" data-tag="tag2 tag4" id="card4">
+                <img src="images/project-4.png" alt="Image" class="projects__item-image">
+                <div class="projects__item-full-blackout"></div>
+                <div class="projects__item-bottom-blackout"></div>
+                <p class="projects__item-title">ЖК “GRAND&GRAND”</p>
+                <div class="projects__item-tags">
+                  <div class="projects__item-tag">#комплексная застройка</div>
+                  <div class="projects__item-tag">#3D, VR, видео</div>
+                </div>
+              </div>
+              <div class="projects__item --5" data-tag="tag3 tag5" id="card5">
+                <img src="images/project-5.png" alt="Image" class="projects__item-image">
+                <div class="projects__item-full-blackout"></div>
+                <div class="projects__item-bottom-blackout"></div>
+                <p class="projects__item-title">Коллекция мебели PUNTO GROUP X KARIM RASHID</p>
+                <div class="projects__item-tags">
+                  <div class="projects__item-tag">#предметная визуализация</div>
+                  <div class="projects__item-tag">#интерьеры</div>
+                </div>
+              </div>
+              <div class="projects__item --6" data-tag="tag3 tag4" id="card6">
+                <img src="images/project-6.png" alt="Image" class="projects__item-image">
+                <div class="projects__item-full-blackout"></div>
+                <div class="projects__item-bottom-blackout"></div>
+                <p class="projects__item-title">Вестибюль ЖК ”URBANIKA”</p>
+                <div class="projects__item-tags">
+                  <div class="projects__item-tag">#интерьеры</div>
+                  <div class="projects__item-tag">#3D, VR, видео</div>
+                </div>
+              </div>
+            </div>
+            <div class="column" id="column2">
+              <!--Вторая колонка-->
+            </div>
+          </div>
+          <div class="projects__button-container">
+            <button class="projects__button">Больше проектов</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="word-of-leader">
+        <div class="container">
+          <div class="word-of-leader__content">
+            <p class="word-of-leader__title">Слово руководителя</p>
+            <p class="word-of-leader__text">
+              Мы знаем, как важно наличие качественных визуализаций для реализации недвижимости в современном мире,
+              поэтому делаем продукт в полном соответствии с высоким стандартом, что помогает повысить привлекательность
+              проекта и привлечь новых клиентов на популярных площадках.
+            </p>
+            <br>
+            <p class="word-of-leader__text">
+              Вдыхаем жизнь в каждый рендер и даем возможность потребителю увидеть объект еще до его реализации - это
+              то,
+              что мы по настоящему любим и умеем.
+            </p>
+          </div>
+          <div class="word-of-leader__leader">
+            <div class="word-of-leader__image-container">
+              <img src="images/leader.png" alt="Image" class="word-of-leader__image">
+            </div>
+            <p class="word-of-leader__leader-name">МАКСИМ НИКИТИН</p>
+            <p class="word-of-leader__leader-post">Ведущий визуализатор</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="team" id="team">
+        <div class="container">
+          <p class="team__title">Команда BIM<span>PRO</span></p>
+          <p class="team__subtitle">Главные действующие лица, именно они создают визуализации и наполняют кадр жизнью.
+          </p>
+          <div class="team__team-members">
+            <div class="team__team-member">
+              <img src="images/team member-1.png" alt="Image" class="team__member-image">
+              <div class="team__background">
+                <p class="team__member-name">Никитин Максим</p>
+                <p class="team__member-post">Ведущий визуализатор</p>
+              </div>
+            </div>
+            <div class="team__team-member">
+              <img src="images/team member-2.png" alt="Image" class="team__member-image">
+              <div class="team__background">
+                <p class="team__member-name">Ратникова Екатерина</p>
+                <p class="team__member-post">Художник-визуализатор</p>
+              </div>
+            </div>
+            <div class="team__team-member">
+              <img src="images/team member-3.png" alt="Image" class="team__member-image">
+              <div class="team__background">
+                <p class="team__member-name">Полина Мустафина</p>
+                <p class="team__member-post">Художник-визуализатор</p>
+              </div>
+            </div>
+            <div class="team__team-member">
+              <img src="images/team member-4.png" alt="Image" class="team__member-image">
+              <div class="team__background">
+                <p class="team__member-name">Егоров Александр</p>
+                <p class="team__member-post">Архитектор</p>
+              </div>
+            </div>
+            <div class="team__team-member">
+              <img src="images/team member-5.png" alt="Image" class="team__member-image">
+              <div class="team__background">
+                <p class="team__member-name">Анна Бендер</p>
+                <p class="team__member-post">Визуализатор-моделлер</p>
+              </div>
+            </div>
+            <div class="team__team-member">
+              <img src="images/team member-6.png" alt="Image" class="team__member-image">
+              <div class="team__background">
+                <p class="team__member-name">Ксения Воронцова</p>
+                <p class="team__member-post">Художник-визуализатор</p>
+              </div>
+            </div>
+            <div class="team__team-member">
+              <img src="images/team member-7.png" alt="Image" class="team__member-image">
+              <div class="team__background">
+                <p class="team__member-name">Светлана Михеева</p>
+                <p class="team__member-post">Руководитель проекта</p>
+              </div>
+            </div>
+            <div class="team__team-member">
+              <img src="images/team member-8.png" alt="Image" class="team__member-image">
+              <div class="team__background">
+                <p class="team__member-name">Андрей Кудрин</p>
+                <p class="team__member-post">Bim-менержер</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="working-with-us" id="guarantee">
+        <div class="container">
+          <div class="working-with-us__questions">
+            <div class="working-with-us__question --1 active">
+              <div class="working-with-us__question-arrow">
+                <div class="working-with-us__question-part-arrow --upper-part"></div>
+                <div class="working-with-us__question-part-arrow --lower-part"></div>
+              </div>
+              <p class="working-with-us__questions-name"><span>Важно</span> знать</p>
+            </div>
+            <hr class="working-with-us__question-line">
+            <div class="working-with-us__question --2">
+              <div class="working-with-us__question-arrow">
+                <div class="working-with-us__question-part-arrow --upper-part"></div>
+                <div class="working-with-us__question-part-arrow --lower-part"></div>
+              </div>
+              <p class="working-with-us__questions-name"><span>Гарантии,</span> прописанные в договоре</p>
+            </div>
+            <hr class="working-with-us__question-line">
+            <div class="working-with-us__question --3">
+              <div class="working-with-us__question-arrow">
+                <div class="working-with-us__question-part-arrow --upper-part"></div>
+                <div class="working-with-us__question-part-arrow --lower-part"></div>
+              </div>
+              <p class="working-with-us__questions-name"><span>Структура</span> работы</p>
+            </div>
+          </div>
+          <div class="working-with-us__answers --1 active">
+            <div class="working-with-us__content-container --1">
+              <ul class="working-with-us__list--1">
+                <li>Мы заинтересованы в взаимовыгодных рабочих отношениях с нашими
+                  клиентами и в том, чтобы довести любой проект до завершения. </li>
+              </ul>
+              <div class="working-with-us__text-container --1">
+                <hr class="working-with-us__answers-line">
+                <p class="working-with-us__text">Изменения и корректировки могут вноситься на любой стадии проекта, но в
+                  разумных пределах, обычно не более 2-3 раз. Стоимость этих корректировок включена в общую стоимость
+                  работ. Радикальные изменений, такие как изменение несущей конструкции здания, перепланировка основных
+                  помещений, полная смена концепции интерьера в стоимость не входят и оплачиваются дополнительно.
+                </p>
+              </div>
+              <ul class="working-with-us__list--1">
+                <li>Передаваемое вами ТЗ должно быть, по возможности, полным и
+                  подробным, чтобы мы могли максимально точно выполнить поставленную задачу.
+                </li>
+              </ul>
+              <ul class="working-with-us__list--1">
+                <li>Нам настолько нравятся наши работы, что мы просто не можем не
+                  поделиться ими, поэтому по завершению проекта мы обычно размещаем его в нашем портфолио на сайте, со
+                  ссылкой на заказчика.</li>
+              </ul>
+              <div class="working-with-us__text-container --2">
+                <hr class="working-with-us__answers-line">
+                <p class="working-with-us__text">Если вам требуется конфиденциальность, это нужно обозначить заранее.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="working-with-us__answers --2">
+            <div class="working-with-us__content-container">
+              <p>Мы прописываем в договоре следующие аспекты работы:</p>
+              <ul class="working-with-us__list--2">
+                <li>цена</li>
+                <li>сроки</li>
+                <li>гарантированное количество правок</li>
+                <li>количество и характеристики финальных изображений / видео</li>
+                <li>техническая поддержка VR-туров, если это необходимо</li>
+              </ul>
+              <a href="Пример договора.txt" class="working-with-us__link" id="downloadLink" download>
+                <div class="working-with-us__link-container">
+                  <img src="images/download.png" alt="Image" class="working-with-us__link-image">
+                  <p class="working-with-us__link-text">Скачать пример договора</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="working-with-us__answers --3">
+            <div class="working-with-us__content-container">
+              <ul class="working-with-us__list--3">
+                <li><span>Создание основного объема сцены</span> без материалов, текстур,
+                  элементов декора фасадов, малых архитектурных форм и элементов благоустройства.
+                  Размер изображений – 1500px по длинной стороне. Вами утверждаются
+                  правильность геометрии и ракурсы, вносятся первые правки. К правкам относятся
+                  незначительные изменения в деталях здания или сооружения, материалах и
+                  текстурах отделки.</li>
+                <li><span>Модель с материалами, текстурами и основными элементами
+                    благоустройства.</span> Размер изображений – 1500px по длинной стороне. Утверждаются
+                  материалы и основные элементы наполнения сцены. Проходит второй этап
+                  корректировок.
+                </li>
+                <li><span>Полное наполнение сцены, проработка деталей.</span> Размер изображений –
+                  1500px по длинной стороне. Внесение окончательных незначительных правок.
+                  Согласование финального варианта композиций и материалов.</li>
+                <li><span>Создание финальных изображений.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-partners">
+        <div class="container">
+          <p class="our-partners__title">наши партнеры</p>
+          <div class="our-partners__logos">
+            <a href="https://www.rosatom.ru/index.html" target="_blank">
+              <div class="our-partners__logo-container">
+                <figure alt="Image" class="our-partners__logo --1"></figure>
+              </div>
+            </a>
+            <a href="https://www.yitgroup.com/" target="_blank">
+              <div class="our-partners__logo-container">
+                <figure alt="Image" class="our-partners__logo --2"></figure>
+              </div>
+            </a>
+            <a href="https://1trest.ru/" target="_blank">
+              <div class="our-partners__logo-container">
+                <figure alt="Image" class="our-partners__logo --3"></figure>
+              </div>
+            </a>
+            <a href="https://pssbim.ru/about/" target="_blank">
+              <div class="our-partners__logo-container">
+                <figure alt="Image" class="our-partners__logo --4"></figure>
+              </div>
+            </a>
+            <a href="https://bimacad.ru/" target="_blank">
+              <div class="our-partners__logo-container">
+                <figure alt="Image" class="our-partners__logo --5"></figure>
+              </div>
+            </a>
+            <a href="https://www.gk-adept.ru/" target="_blank">
+              <div class="our-partners__logo-container">
+                <figure alt="Image" class="our-partners__logo --6"></figure>
+              </div>
+            </a>
+            <a href="https://www.ahlers.com/en" target="_blank">
+              <div class="our-partners__logo-container">
+                <figure alt="Image" class="our-partners__logo --7"></figure>
+              </div>
+            </a>
+            <a href="https://hammer-fit.ru/?ysclid=m8vhi6s6wy687810211" target="_blank">
+              <div class="our-partners__logo-container">
+                <figure alt="Image" class="our-partners__logo --8"></figure>
+              </div>
+            </a>
+            <a href="https://enco.ru/" target="_blank">
+              <div class="our-partners__logo-container">
+                <figure alt="Image" class="our-partners__logo --9"></figure>
+              </div>
+            </a>
+            <a href="https://trest-group.ru/" target="_blank">
+              <div class="our-partners__logo-container">
+                <figure alt="Image" class="our-partners__logo --10"></figure>
+              </div>
+            </a>
+            <a href="https://www.puntodesignru.com/?ysclid=m8viu3e5zh55659217" target="_blank">
+              <div class="our-partners__logo-container">
+                <figure alt="Image" class="our-partners__logo --11"></figure>
+              </div>
+            </a>
+            <a href="https://grandgrand.ru/?ysclid=m8viyuslo8426125415&sess=543502263" target="_blank">
+              <div class="our-partners__logo-container">
+                <figure alt="Image" class="our-partners__logo --12"></figure>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="mass-media">
+        <div class="container">
+          <div class="mass-media__head">
+            <p class="mass-media__title">СМИ о нас</p>
+            <div class="mass-media__button-container">
+              <button class="mass-media__prev-button" id="prevMediaSlide">
+                <hr class="mass-media__button-part --upper-part">
+                <hr class="mass-media__button-part --lower-part">
+              </button>
+              <button class="mass-media__next-button" id="nextMediaSlide">
+                <hr class="mass-media__button-part --upper-part">
+                <hr class="mass-media__button-part --lower-part">
+              </button>
+            </div>
+          </div>
+          <div class="mass-media__slides">
+
+            <div class="mass-media__slide">
+              <div class="mass-media__slide-container">
+                <img src="images/media-1.png" alt="Image" class="mass-media__slide-logo">
+              </div>
+              <div class="mass-media__slide-text-container">
+                <p class="mass-media__slide-text">Генплан и ключевая ставка заняли лидирующие позиции – Коммерсантъ
+                  Санкт-Петербург</p>
+              </div>
+              <a href="https://www.kommersant.ru/doc/6478080" class="mass-media__slide-link" target="_blank">
+                <div class="mass-media__slide-link-container">
+                  <p class="mass-media__slide-link-text">Читать</p>
+                  <img src="images/read-arrow-1.png" alt="Image" class="mass-media__slide-arrow">
+                </div>
+              </a>
+            </div>
+
+            <div class="mass-media__slide">
+              <div class="mass-media__slide-container">
+                <img src="images/media-2.png" alt="Image" class="mass-media__slide-logo">
+              </div>
+              <div class="mass-media__slide-text-container">
+                <p class="mass-media__slide-text">Высотки по высоким технологиям: Петербург лидирует в цифровизации
+                  строительства</p>
+              </div>
+              <a href="https://telesputnik.ru/materials/spb/article/vysotki-po-vysokim-texnologiyam-peterburg-lidiruet-v-cifrovizacii-stroitelstva"
+                class="mass-media__slide-link" target="_blank">
+                <div class="mass-media__slide-link-container">
+                  <p class="mass-media__slide-link-text">Читать</p>
+                  <img src="images/read-arrow-1.png" alt="Image" class="mass-media__slide-arrow">
+                </div>
+              </a>
+            </div>
+
+            <div class="mass-media__slide">
+              <div class="mass-media__slide-container">
+                <img src="images/media-3.png" alt="Image" class="mass-media__slide-logo">
+              </div>
+              <div class="mass-media__slide-text-container">
+                <p class="mass-media__slide-text">Итоги года с РБК «Инфраструктурные инвестиции 2021. Общество.
+                  Технологии. Бизнес»</p>
+              </div>
+              <a href="https://notim.ru/news/45" class="mass-media__slide-link" target="_blank">
+                <div class="mass-media__slide-link-container">
+                  <p class="mass-media__slide-link-text">Читать</p>
+                  <img src="images/read-arrow-1.png" alt="Image" class="mass-media__slide-arrow">
+                </div>
+              </a>
+            </div>
+
+            <div class="mass-media__slide">
+              <div class="mass-media__slide-container">
+                <img src="images/media-4.png" alt="Image" class="mass-media__slide-logo">
+              </div>
+              <div class="mass-media__slide-text-container">
+                <p class="mass-media__slide-text">Высотки по высоким технологиям: Петербург лидирует в цифровизации
+                  строительства</p>
+              </div>
+              <a href="https://telesputnik.ru/materials/spb/article/vysotki-po-vysokim-texnologiyam-peterburg-lidiruet-v-cifrovizacii-stroitelstva"
+                class="mass-media__slide-link" target="_blank">
+                <div class="mass-media__slide-link-container">
+                  <p class="mass-media__slide-link-text">Читать</p>
+                  <img src="images/read-arrow-1.png" alt="Image" class="mass-media__slide-arrow">
+                </div>
+              </a>
+            </div>
+
+            <div class="mass-media__slide">
+              <div class="mass-media__slide-container">
+                <img src="images/media-5.png" alt="Image" class="mass-media__slide-logo">
+              </div>
+              <div class="mass-media__slide-text-container">
+                <p class="mass-media__slide-text">Проверка BIM модели как новый способ аудита рабочей документации</p>
+              </div>
+              <a href="https://digital-build.ru/proverka-rabochej-dokumentaczii-v-bim-kogda-nuzhna-i-kak-ee-vypolnit/"
+                class="mass-media__slide-link" target="_blank">
+                <div class="mass-media__slide-link-container">
+                  <p class="mass-media__slide-link-text">Читать</p>
+                  <img src="images/read-arrow-1.png" alt="Image" class="mass-media__slide-arrow">
+                </div>
+              </a>
+            </div>
+
+            <div class="mass-media__slide">
+              <div class="mass-media__slide-container">
+                <img src="images/media-6.png" alt="Image" class="mass-media__slide-logo">
+              </div>
+              <div class="mass-media__slide-text-container">
+                <p class="mass-media__slide-text">Наступает переворот в строительной отрасли</p>
+              </div>
+              <a href="https://ardexpert.ru/article/24404" class="mass-media__slide-link" target="_blank">
+                <div class="mass-media__slide-link-container">
+                  <p class="mass-media__slide-link-text">Читать</p>
+                  <img src="images/read-arrow-1.png" alt="Image" class="mass-media__slide-arrow">
+                </div>
+              </a>
+            </div>
+
+            <div class="mass-media__slide">
+              <div class="mass-media__slide-container">
+                <img src="images/media-7.png" alt="Image" class="mass-media__slide-logo">
+              </div>
+              <div class="mass-media__slide-text-container">
+                <p class="mass-media__slide-text">БИМПРО предлагает ввести собственный классификатор детализации моделей
+                  ОКС для России.</p>
+              </div>
+              <a href="https://ktostroit.ru/catalog/company/311747/news/311776/" class="mass-media__slide-link"
+                target="_blank">
+                <div class="mass-media__slide-link-container">
+                  <p class="mass-media__slide-link-text">Читать</p>
+                  <img src="images/read-arrow-1.png" alt="Image" class="mass-media__slide-arrow">
+                </div>
+              </a>
+            </div>
+
+            <div class="mass-media__slide">
+              <div class="mass-media__slide-container">
+                <img src="images/media-8.png" alt="Image" class="mass-media__slide-logo">
+              </div>
+              <div class="mass-media__slide-text-container">
+                <p class="mass-media__slide-text">Благоустройство на самый взыскательный вкус — Новости Уфы и Башкирии -
+                  Медиакорсеть</p>
+              </div>
+              <a href="https://mkset.ru/news/2021-09-27/blagoustroystvo-na-samyy-vzyskatelnyy-vkus-1888096"
+                class="mass-media__slide-link" target="_blank">
+                <div class="mass-media__slide-link-container">
+                  <p class="mass-media__slide-link-text">Читать</p>
+                  <img src="images/read-arrow-1.png" alt="Image" class="mass-media__slide-arrow">
+                </div>
+              </a>
+            </div>
+
+          </div>
+          <div class="mass-media__bottom">
+            <div class="mass-media__line-container">
+              <hr class="mass-media__line --1 active">
+              <hr class="mass-media__line --2">
+            </div>
+            <p class="mass-media__slide-number" id="MediaSlideNumber">1/2</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+
+          <div class="news__head">
+            <p class="news__title">Новости</p>
+            <div class="news__button-container">
+              <button class="news__prev-button" id="prevNewsSlide">
+                <hr class="news__button-part --upper-part">
+                <hr class="news__button-part --lower-part">
+              </button>
+              <button class="news__next-button" id="nextNewsSlide">
+                <hr class="news__button-part --upper-part">
+                <hr class="news__button-part --lower-part">
+              </button>
+            </div>
+          </div>
+
+          <div class="news__slides">
+
+            <div class="news__slide">
+              <div class="news__slide-container">
+                <img src="images/news-1.png" alt="Image" class="news__slide-logo">
+              </div>
+              <div class="news__slide-text-container">
+                <p class="news__slide-date">28.01.2025</p>
+                <p class="news__slide-text">Компания BIMPRO отмечена благодарностью Министерства строительства РФ за
+                  вклад
+                  в цифровизацию отрасли</p>
+              </div>
+              <a href="https://vk.com/wall-212213425_199" class="news__slide-link" target="_blank">
+                <div class="news__slide-link-container">
+                  <p class="news__slide-link-text">Читать</p>
+                  <div alt="Image" class="news__slide-arrow"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="news__slide">
+              <div class="news__slide-container">
+                <img src="images/news-2.png" alt="Image" class="news__slide-logo">
+              </div>
+              <div class="news__slide-text-container">
+                <p class="news__slide-date">24.01.2025</p>
+                <p class="news__slide-text">Анна Николаева выступила с докладом на форуме СнабТех’24</p>
+              </div>
+              <a href="https://snab-tech.com/" class="news__slide-link" target="_blank">
+                <div class="news__slide-link-container">
+                  <p class="news__slide-link-text">Читать</p>
+                  <div alt="Image" class="news__slide-arrow"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="news__slide">
+              <div class="news__slide-container">
+                <img src="images/news-3.png" alt="Image" class="news__slide-logo">
+              </div>
+              <div class="news__slide-text-container">
+                <p class="news__slide-date">12.12.2024</p>
+                <p class="news__slide-text">BIMPRO-олимпиада 2024: Студенты со всей России смоделировали собственные
+                  проекты по РД</p>
+              </div>
+              <a href="https://www.pgups.ru/news/student_life/netipovoy-proekt-i-nbsp-absolyutnoe-liderstvo/"
+                class="news__slide-link" target="_blank">
+                <div class="news__slide-link-container">
+                  <p class="news__slide-link-text">Читать</p>
+                  <div alt="Image" class="news__slide-arrow"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="news__slide">
+              <div class="news__slide-container">
+                <img src="images/news-4.png" alt="Image" class="news__slide-logo">
+              </div>
+              <div class="news__slide-text-container">
+                <p class="news__slide-date">30.05.2024</p>
+                <p class="news__slide-text">В Минстрое России прошло совещание о мерах поддержки перехода застройщиков
+                  на
+                  ТИМ</p>
+              </div>
+              <a href="https://notim.ru/news/476/" class="news__slide-link" target="_blank">
+                <div class="news__slide-link-container">
+                  <p class="news__slide-link-text">Читать</p>
+                  <div alt="Image" class="news__slide-arrow"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="news__slide">
+              <div class="news__slide-container">
+                <img src="images/news-5.png" alt="Image" class="news__slide-logo">
+              </div>
+              <div class="news__slide-text-container">
+                <p class="news__slide-date">26.01.2024</p>
+                <p class="news__slide-text">Glorax вложится в проектное бюро</p>
+              </div>
+              <a href="https://www.kommersant.ru/doc/6467599" class="news__slide-link" target="_blank">
+                <div class="news__slide-link-container">
+                  <p class="news__slide-link-text">Читать</p>
+                  <div alt="Image" class="news__slide-arrow"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="news__slide">
+              <div class="news__slide-container">
+                <img src="images/news-6.png" alt="Image" class="news__slide-logo">
+              </div>
+              <div class="news__slide-text-container">
+                <p class="news__slide-date">26.12.2023</p>
+                <p class="news__slide-text">ТИМ на стройке</p>
+              </div>
+              <a href="https://asninfo.ru/techmats/488-tim-na-stroyke" class="news__slide-link" target="_blank">
+                <div class="news__slide-link-container">
+                  <p class="news__slide-link-text">Читать</p>
+                  <div alt="Image" class="news__slide-arrow"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="news__slide">
+              <div class="news__slide-container">
+                <img src="images/news-7.png" alt="Image" class="news__slide-logo">
+              </div>
+              <div class="news__slide-text-container">
+                <p class="news__slide-date">26.12.2023</p>
+                <p class="news__slide-text">BM GROUP Development внедряет ТИМ при проектировании и строительстве всех
+                  своих проектов</p>
+              </div>
+              <a href="https://www.1dom.ru/news/135575/" class="news__slide-link" target="_blank">
+                <div class="news__slide-link-container">
+                  <p class="news__slide-link-text">Читать</p>
+                  <div alt="Image" class="news__slide-arrow"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="news__slide">
+              <div class="news__slide-container">
+                <img src="images/news-8.png" alt="Image" class="news__slide-logo">
+              </div>
+              <div class="news__slide-text-container">
+                <p class="news__slide-date">25.12.2023</p>
+                <p class="news__slide-text">Эксперимент с оглядкой на контекст</p>
+              </div>
+              <a href="https://www.kommersant.ru/doc/6424994" class="news__slide-link" target="_blank">
+                <div class="news__slide-link-container">
+                  <p class="news__slide-link-text">Читать</p>
+                  <div alt="Image" class="news__slide-arrow"></div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="news__bottom">
+            <div class="news__line-container">
+              <hr class="news__line --1 active">
+              <hr class="news__line --2">
+            </div>
+            <p class="news__slide-number" id="newsSlideNumber">1/2</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="form">
+        <div class="container">
+          <p class="form__title">Получите расчет стоимости вашего проекта в день заявки</p>
+          <button class="form__button" id="feedbackButton10">Оставить заявку</button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer__head">
+          <a onclick="scrollToHome()"><img src="images/footer-logo.png" alt="Image" class="footer__logo"></a>
+          <div class="footer__links">
+            <a class="footer__link" onclick="scrollToServices()">Услуги</a>
+            <a class="footer__link" onclick="scrollToAdvantage()">Преимущества</a>
+            <a class="footer__link" onclick="scrollToProjects()">Проекты</a>
+            <a class="footer__link" onclick="scrollToTeam()">Команда</a>
+            <a class="footer__link" onclick="scrollToGuarantee()">Гарантии</a>
+          </div>
+        </div>
+        <div class="footer__our-directions">
+          <p class="footer__our-direction">Другие наши направления:</p>
+          <a class="footer__our-direction"><span>Проектирование</span></a>
+          <a class="footer__our-direction"><span>Дизайн</span></a>
+        </div>
+        <div class="footer__address-and-contact-container" id="contacts">
+          <div class="footer__address-and-contact-left-part">
+            <p class="footer__address"><span>г. Санкт-Петербург, Шпалерная ул. д. 51</span></p>
+            <div class="footer__contacts-and-opening-hours">
+              <div class="footer__contacts">
+                <p>+7 812 330 10 40</p>
+                <p>project@bimpro.ru</p>
+              </div>
+              <div class="footer__opening-hours">
+                <p>ПН-ПТ 9:00 — 18:00</p>
+                <p>СБ, ВС — Выходные</p>
+              </div>
+            </div>
+            <img src="images/map.png" alt="Image" class="footer__map-image">
+          </div>
+          <div class="footer__address-and-contact-right-part">
+            <div class="footer__countries-and-phone-container">
+              <div class="footer__countries-and-phone --1">
+                <p class="footer__address"><span>Calle Gravina 21, Bajo 3</span></p>
+                <p class="footer__address">Madrid</p>
+                <div class="footer__phone-numbers">
+                  <p class="footer__phone-number">+34 657 57 25 65</p>
+                  <p class="footer__phone-number">+34 653 53 35 68</p>
+                </div>
+              </div>
+              <div class="footer__countries-and-phone --2">
+                <p class="footer__address"><span>Zentnerstraße 35</span></p>
+                <p class="footer__address">Múnich</p>
+                <div class="footer__phone-numbers">
+                  <p class="footer__phone-number">+49 157 325 40 621</p>
+                  <p class="footer__phone-number">+49 157 703 06 271</p>
+                </div>
+              </div>
+              <div class="footer__countries-and-phone --3">
+                <p class="footer__address"><span>Мекен Жайы 5 Көше</span></p>
+                <p class="footer__address">Астана</p>
+                <div class="footer__phone-numbers">
+                  <p class="footer__phone-number">+34 657 57 25 65</p>
+                  <p class="footer__phone-number">+34 653 53 35 68</p>
+                </div>
+              </div>
+            </div>
+            <p class="footer__privacy-policy">Политика конфиденциальности</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-container">
+          <p class="footer__rights-reserved">Все права защищены ООО ”БИМПРО”</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="feedback-form__overlay" id="feedbackFormOverlay"></div>
+
+    <div class="feedback-form" id="feedbackForm">
+      <button class="feedback-form__close-button --TS" id="closeFeedbackForm">
+        <div class="feedback-form__close-button-line --TS --1"></div>
+        <div class="feedback-form__close-button-line --TS --2"></div>
+      </button>
+      <div class="feedback-form__popup-frame --1" id="firstFramefeedbackForm">
+        <p class="feedback-form__title--1">Оставьте заявку на звонок</p>
+        <div class="feedback-form__container">
+          <input class="feedback-form__input --name" placeholder="Имя" id="inputOne"></input>
+          <input class="feedback-form__input --phone-number" placeholder="Номер телефона" id="inputTwo"></input>
+          <button class="feedback-form__button" id="InputButton">Получить консультацию</button>
+          <p class="feedback-form__approval">Нажав на кнопку, я соглашаюсь
+            на обработку <a>персональных данных</a></p>
+        </div>
+      </div>
+      <div class="feedback-form__popup-frame --2" id="secondFramefeedbackForm">
+        <div class="feedback-form__spinner-circle"></div>
+      </div>
+      <div class="feedback-form__popup-frame --3" id="thirdFramefeedbackForm">
+        <img src="images/successful-sending.png" alt="Image" class="feedback-form__image">
+        <p class="feedback-form__title--2">Заявка успешно отправлена!</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
