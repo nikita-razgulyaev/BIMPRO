@@ -3,12 +3,10 @@
   padding: 0;
 }
 
-/*Шрифты*/
 @font-face {
   font-family: 'Roboto-Light';
   src: url('fonts//Roboto/Roboto-Light.ttf');
 }
-
 
 @font-face {
   font-family: 'Roboto-Regular';
@@ -45,8 +43,131 @@
   src: url('fonts/BebasNeuePro-Bold.ttf');
 }
 
-/*Медиа запросы*/
+@media (max-width: 300px) {
+  .body-container {
+    zoom: 17.14%;
+  }
+}
 
+@media (min-width: 301px) and (max-width: 400px) {
+  .body-container {
+    zoom: 17.20%;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+  .body-container {
+    zoom: 22.94%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+  .body-container {
+    zoom: 28.69%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+  .body-container {
+    zoom: 34.34%;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+  .body-container {
+    zoom: 39.14%;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+  .body-container {
+    zoom: 44.57%;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+  .body-container {
+    zoom: 50.06%;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1100px) {
+  .body-container {
+    zoom: 56.00%;
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1200px) {
+  .body-container {
+    zoom: 61.14%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .body-container {
+    zoom: 66.72%;
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1400px) {
+  .body-container {
+    zoom: 72.29%;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1500px) {
+  .body-container {
+    zoom: 77.83%;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 1600px) {
+  .body-container {
+    zoom: 83.39%;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 1700px) {
+  .body-container {
+    zoom: 88.94%;
+  }
+}
+
+@media (min-width: 1701px) and (max-width: 1800px) {
+  .body-container {
+    zoom: 94.50%;
+  }
+}
+
+@media (min-width: 1801px) and (max-width: 1900px) {
+  .body-container {
+    zoom: 100.06%;
+  }
+}
+
+@media (min-width: 1901px) and (max-width: 2000px) {
+  .body-container {
+    zoom: 105.61%;
+  }
+}
+
+@media (min-width: 2001px) and (max-width: 2100px) {
+  .body-container {
+    zoom: 111.17%;
+  }
+}
+
+@media (min-width: 2101px) and (max-width: 2200px) {
+  .body-container {
+    zoom: 116.72%;
+  }
+}
+
+@media (min-width: 2201px) {
+  .body-container {
+    zoom: 116.72%;
+  }
+}
 
 body {
   width: 100%;
@@ -58,6 +179,7 @@ body {
   font-family: 'Roboto-Regular';
   font-size: 18px;
   color: #EFEFEF;
+  overflow-x: hidden;
 }
 
 .body-container {
@@ -121,12 +243,13 @@ header .container {
 .header__links {
   margin-left: 75.9px;
   display: flex;
-  gap: 35px;
+  gap: 10px;
   align-items: center;
 }
 
 .header__link {
-  height: 87px;
+  padding: 0 15px;
+  height: 89px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -151,7 +274,7 @@ header .container {
   width: 100%;
   height: 2px;
   background-color: #E74214;
-  transform: translateX(-100%);
+  transform: translateX(-101%);
   transition: transform 0.3s ease-out;
 }
 
@@ -160,7 +283,7 @@ header .container {
 }
 
 .header__dropdown-menu {
-  margin-left: 277px;
+  margin-left: 261px;
   margin-top: 88px;
   width: 480px;
   height: 360px;
@@ -196,7 +319,7 @@ header .container {
 }
 
 .header__contacts {
-  margin-left: 195px;
+  margin-left: 175px;
   min-width: 150px;
   max-width: 150px;
   display: grid;
@@ -650,6 +773,15 @@ header .container {
 .benefit__benefit-name--2 span,
 .benefit__benefit-name--3 span,
 .benefit__benefit-name--4 span {
+  color: #E74214;
+}
+
+.benefit__benefit-name--4 p {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.benefit__benefit-name--4 p:hover {
   color: #E74214;
 }
 
@@ -1364,7 +1496,7 @@ header .container {
 }
 
 .service__popup-frame {
-  margin: 97px 0 97px 106px;
+  margin: 75px 100px;
   width: 821px;
   color: #1C1C1C;
 }
@@ -1434,6 +1566,10 @@ header .container {
   font-size: 50px;
   line-height: 50px;
   text-transform: uppercase;
+}
+
+.projects__title span {
+  color: #EA4C14;
 }
 
 .projects__tags {
@@ -1631,6 +1767,10 @@ header .container {
   font-size: 50px;
   line-height: 50px;
   text-transform: uppercase;
+}
+
+.word-of-leader__title span {
+  color: #EA4C14;
 }
 
 .word-of-leader__text {
@@ -2512,6 +2652,10 @@ footer {
   gap: 41px;
 }
 
+.footer__our-directions a {
+  text-decoration: none;
+}
+
 .footer__our-direction {
   font-family: 'Roboto-Regular';
   font-size: 18px;
@@ -2610,6 +2754,7 @@ footer {
 
 .footer__privacy-policy {
   color: #E74214;
+  text-decoration: none;
   border-bottom: #E74214 1px solid;
   transition: 0.2s;
   cursor: pointer;
@@ -2633,7 +2778,6 @@ footer {
 .footer__bottom-container {
   width: 1366px;
 }
-
 
 .feedback-form__overlay {
   display: none;

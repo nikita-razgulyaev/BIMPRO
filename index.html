@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="body-container">
+  <div class="body-container" id="bodyContainer">
     <header>
       <div class="container" id="container1">
         <a onclick="scrollToHome()"><img src="images/header-logo.png" alt="Image" class="header__icon-image"></a>
@@ -184,7 +184,7 @@
             </div>
             <hr class="benefit__vertical-line--4">
             <hr class="benefit__slash-line--4">
-            <div class="benefit__benefit-name--4">
+            <div class="benefit__benefit-name--4" id="feedbackButton11">
               <p><span>Бесплатная консультация</span></p>
               <p>по любым вопросам</p>
             </div>
@@ -1110,10 +1110,9 @@
             <div class="service__close-button-line --1"></div>
             <div class="service__close-button-line --2"></div>
           </button>
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/n-xnqNvvmms?si=7QMfrfOhDKhMHQVf"
-            title="YouTube video player" frameborder="o" border="none"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="100%" height="100%" src="https://rutube.ru/play/embed/3dad0406027969bb664d347bdc8a1a32/"
+            frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
+            allowFullScreen></iframe>
         </div>
 
         <div class="services__service --6" id="service-6">
@@ -1229,7 +1228,7 @@
 
       <section class="projects" id="projects">
         <div class="container">
-          <p class="projects__title">Какие проекты мы уже реализовали?</p>
+          <p class="projects__title">проекты которые <span>мы уже реализовали</span></p>
           <div class="projects__tags">
             <div class="projects__tag" data-tag="tag1">#архитектура</div>
             <div class="projects__tag" data-tag="tag2">#комплексная застройка</div>
@@ -1311,7 +1310,7 @@
             </div>
           </div>
           <div class="projects__button-container">
-            <button class="projects__button">Больше проектов</button>
+            <button class="projects__button" onclick="projectButtonText()">Больше проектов</button>
           </div>
         </div>
       </section>
@@ -1319,7 +1318,7 @@
       <section class="word-of-leader">
         <div class="container">
           <div class="word-of-leader__content">
-            <p class="word-of-leader__title">Слово руководителя</p>
+            <p class="word-of-leader__title"><span>Слово</span> руководителя</p>
             <p class="word-of-leader__text">
               Мы знаем, как важно наличие качественных визуализаций для реализации недвижимости в современном мире,
               поэтому делаем продукт в полном соответствии с высоким стандартом, что помогает повысить привлекательность
@@ -1476,7 +1475,8 @@
                 <li>количество и характеристики финальных изображений / видео</li>
                 <li>техническая поддержка VR-туров, если это необходимо</li>
               </ul>
-              <a href="Пример договора.txt" class="working-with-us__link" id="downloadLink" download>
+              <a href="docs/Пример договора.doc" class="working-with-us__link" id="downloadLink"
+                download="Пример договора">
                 <div class="working-with-us__link-container">
                   <img src="images/download.png" alt="Image" class="working-with-us__link-image">
                   <p class="working-with-us__link-text">Скачать пример договора</p>
@@ -1926,8 +1926,8 @@
         </div>
         <div class="footer__our-directions">
           <p class="footer__our-direction">Другие наши направления:</p>
-          <a class="footer__our-direction"><span>Проектирование</span></a>
-          <a class="footer__our-direction"><span>Дизайн</span></a>
+          <a href="https://бимпро.рф/" target="_blank" class="footer__our-direction"><span>Проектирование</span></a>
+          <a href="https://design.bimpro.ru/" target="_blank" class="footer__our-direction"><span>Дизайн</span></a>
         </div>
         <div class="footer__address-and-contact-container" id="contacts">
           <div class="footer__address-and-contact-left-part">
@@ -1966,12 +1966,13 @@
                 <p class="footer__address"><span>Мекен Жайы 5 Көше</span></p>
                 <p class="footer__address">Астана</p>
                 <div class="footer__phone-numbers">
-                  <p class="footer__phone-number">+34 657 57 25 65</p>
-                  <p class="footer__phone-number">+34 653 53 35 68</p>
+                  <p class="footer__phone-number">+7 812 330 13 40</p>
+                  <p class="footer__phone-number">+7 812 330 12 53</p>
                 </div>
               </div>
             </div>
-            <p class="footer__privacy-policy">Политика конфиденциальности</p>
+            <a href="docs/Политика конфиденциальности.docx" target="_blank" class="footer__privacy-policy">Политика
+              конфиденциальности</a>
           </div>
         </div>
       </div>
@@ -1996,7 +1997,7 @@
           <input class="feedback-form__input --phone-number" placeholder="Номер телефона" id="inputTwo"></input>
           <button class="feedback-form__button" id="InputButton">Получить консультацию</button>
           <p class="feedback-form__approval">Нажав на кнопку, я соглашаюсь
-            на обработку <a>персональных данных</a></p>
+            на обработку <a href="docs/Политика конфиденциальности.docx" target="_blank">персональных данных</a></p>
         </div>
       </div>
       <div class="feedback-form__popup-frame --2" id="secondFramefeedbackForm">
