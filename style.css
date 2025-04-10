@@ -1553,7 +1553,7 @@ header .container {
 }
 
 .projects {
-  width: 100%;
+  width: 1920px;
   height: 2180px;
   background-color: #2E2E31;
   display: grid;
@@ -1573,6 +1573,7 @@ header .container {
 }
 
 .projects__tags {
+  width: 1366px;
   margin-top: 60px;
   height: min-content;
   display: flex;
