@@ -54,7 +54,7 @@ function scrollToHome() {
 function scrollToServices() {
   const section = document.getElementById('services');
   const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
-  const offsetPosition = sectionPosition - 50;
+  const offsetPosition = sectionPosition - 100;
 
   window.scrollTo({
     top: offsetPosition,
@@ -131,7 +131,7 @@ function scrollToServiceSix() {
 function scrollToAdvantage() {
   const section = document.getElementById('advantages');
   const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
-  const offsetPosition = sectionPosition - 50;
+  const offsetPosition = sectionPosition - 120;
   
   window.scrollTo({
     top: offsetPosition,
