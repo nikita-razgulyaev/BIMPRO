@@ -1553,7 +1553,7 @@ header .container {
 }
 
 .projects {
-  width: 100%;
+  width: 1920px;
   height: 2180px;
   background-color: #2E2E31;
   display: grid;
@@ -2629,6 +2629,7 @@ footer {
 }
 
 .footer__links {
+  margin-top: 7px;
   display: flex;
   gap: 80px;
 }
@@ -2636,6 +2637,7 @@ footer {
 .footer__link {
   font-family: 'Rubik-Regular';
   font-size: 20px;
+  line-height: 27px;
   color: #FFF;
   text-decoration: none;
   transition: 0.2s;
