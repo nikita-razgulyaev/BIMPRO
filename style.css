@@ -1573,6 +1573,7 @@ header .container {
 }
 
 .projects__tags {
+  width: 1366px;
   margin-top: 60px;
   height: min-content;
   display: flex;
