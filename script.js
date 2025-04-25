@@ -213,7 +213,7 @@ showSlide(currentSlide);
 let currentScrollThumb = 0;
 const scrollThumb = document.getElementById('scrollThumb');
 const totalSlides = 6;
-const slideWidth = 42.18;
+const slideWidth = 42.33;
 
 function updateScrollThumbPosition() {
   scrollThumb.style.left = `${currentScrollThumb * slideWidth}px`;
@@ -287,9 +287,16 @@ document.querySelectorAll('.answers-to-questions__question').forEach(block => {
   });
 });
 
+let isFunctionRunning = false;
+
 function addActiveClass() {
+  if (isFunctionRunning) {
+    return;
+  }
+
+  isFunctionRunning = true;
+
   for (let i = 1; i <= 3; i++) {
-     
     const questionElement = document.querySelector(`.answers-to-questions__question.--${i}`);
     const answerElement = document.querySelector(`.answers-to-questions__answers.--${i}`);
 
@@ -299,9 +306,14 @@ function addActiveClass() {
           const otherAnswerElement = document.querySelector(`.answers-to-questions__answers.--${j}`);
           if (otherAnswerElement) {
             otherAnswerElement.classList.remove('active');
+            otherAnswerElement.classList.remove('content-active');
           }
         }
         answerElement.classList.add('active');
+        setTimeout(() => {
+          answerElement.classList.add('content-active');
+          isFunctionRunning = false;
+        }, 950);
       });
     }
   }
@@ -336,13 +348,33 @@ document.querySelectorAll('.answers-to-questions__answer.--3').forEach(block => 
   });
 });
 
-const questionElements = document.querySelectorAll(`.service__answer-to-question`);
+const questionElements = document.querySelectorAll('.service__answer-to-question');
+let isProcessing = false;
 
 questionElements.forEach(element => {
   element.addEventListener('click', () => {
-    questionElements.forEach(el => el.classList.remove('active'));
-    
+    if (isProcessing) return;
+
+    isProcessing = true;
+
+    const isActive = element.classList.contains('active');
+
+    if (isActive) {
+      isProcessing = false;
+      return;
+    }
+
+    questionElements.forEach(el => {
+      el.classList.remove('active');
+      el.classList.remove('content-active');
+    });
+
     element.classList.add('active');
+
+    setTimeout(() => {
+      element.classList.add('content-active');
+      isProcessing = false;
+    }, 950);
   });
 });
 
