@@ -220,7 +220,6 @@ nav,
   width: 1366px;
 }
 
-/*Шапка*/
 header {
   height: 87px;
   position: fixed;
@@ -239,7 +238,6 @@ header .container {
   cursor: pointer;
 }
 
-/*Навигация по сайту в шапке*/
 .header__links {
   margin-left: 75.9px;
   display: flex;
@@ -339,8 +337,7 @@ header .container {
   text-align: center;
 }
 
-/*Навигация под шапкой*/
-.nav__item {
+.header__nav-button {
   margin-left: 1116px;
   display: block;
   margin-top: 88px;
@@ -359,23 +356,20 @@ header .container {
   cursor: pointer;
 }
 
-.nav__item:hover {
+.header__nav-button:hover {
   background-color: #eb2211;
 }
 
-/*Первый блок*/
 .start-page {
   padding-top: 87px;
 }
 
-/*Контейнер для контента блока*/
 .start-page__content {
   margin-top: 99px;
   display: flex;
   flex-wrap: nowrap;
 }
 
-/*Предложения*/
 .start-page__offer {
   width: 424px;
 }
@@ -422,7 +416,7 @@ header .container {
 
 .start-page__slider {
   display: flex;
-  transition: transform 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .start-page__slide {
@@ -432,8 +426,9 @@ header .container {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
-  display: none;
   color: white;
+  opacity: 0;
+  transition: 0.3s;
 }
 
 .start-page__slide:last-child {
@@ -465,7 +460,7 @@ header .container {
 }
 
 .start-page__slide--active {
-  display: block;
+  opacity: 1;
 }
 
 .start-page__slide-blackout {
@@ -527,7 +522,6 @@ header .container {
   transition: transform 0.3s ease;
 }
 
-/*Блок услуги*/
 .service-page {
   margin-top: 127px;
 }
@@ -1123,6 +1117,10 @@ header .container {
   background-color: #2E2E31;
 }
 
+.services__service.--5 .service__image-full-blackout {
+  cursor: pointer;
+}
+
 .service__image-container {
   height: 1104px;
   position: absolute;
@@ -1160,6 +1158,7 @@ header .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: default;
 }
 
 .service__image-full-blackout {
@@ -1638,13 +1637,14 @@ header .container {
   margin: 0 0 23px 40px;
   height: 27px;
   position: absolute;
-  display: none;
+  display: flex;
   gap: 11px;
   transition: 0.3s;
+  opacity: 0;
 }
 
 .projects__item:hover .projects__item-tags {
-  display: flex;
+  opacity: 1;
 }
 
 .projects__item-tag {
@@ -2536,6 +2536,7 @@ footer {
 
 .footer__logo {
   width: 186px;
+  cursor: pointer;
 }
 
 .footer__links {
