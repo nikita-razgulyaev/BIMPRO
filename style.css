@@ -43,129 +43,297 @@
   src: url('fonts/BebasNeuePro-Bold.ttf');
 }
 
-@media (max-width: 300px) {
+@media (max-width: 250px) {
   .body-container {
-    zoom: 17.14%;
+    zoom: 13.02%;
   }
 }
 
-@media (min-width: 301px) and (max-width: 400px) {
+@media (min-width: 251px) and (max-width: 300px) {
   .body-container {
-    zoom: 17.20%;
+    zoom: 15.63%;
   }
 }
 
-@media (min-width: 401px) and (max-width: 500px) {
+@media (min-width: 301px) and (max-width: 350px) {
   .body-container {
-    zoom: 22.94%;
+    zoom: 18.23%;
   }
 }
 
-@media (min-width: 501px) and (max-width: 600px) {
+@media (min-width: 351px) and (max-width: 400px) {
   .body-container {
-    zoom: 28.69%;
+    zoom: 20.83%;
   }
 }
 
-@media (min-width: 601px) and (max-width: 700px) {
+@media (min-width: 401px) and (max-width: 450px) {
   .body-container {
-    zoom: 34.34%;
+    zoom: 23.44%;
   }
 }
 
-@media (min-width: 701px) and (max-width: 800px) {
+@media (min-width: 451px) and (max-width: 500px) {
   .body-container {
-    zoom: 39.14%;
+    zoom: 26.04%;
   }
 }
 
-@media (min-width: 801px) and (max-width: 900px) {
+@media (min-width: 501px) and (max-width: 550px) {
   .body-container {
-    zoom: 44.57%;
+    zoom: 28.65%;
   }
 }
 
-@media (min-width: 901px) and (max-width: 1000px) {
+@media (min-width: 551px) and (max-width: 600px) {
   .body-container {
-    zoom: 50.06%;
+    zoom: 31.25%;
   }
 }
 
-@media (min-width: 1001px) and (max-width: 1100px) {
+@media (min-width: 601px) and (max-width: 650px) {
   .body-container {
-    zoom: 56.00%;
+    zoom: 33.85%;
   }
 }
 
-@media (min-width: 1101px) and (max-width: 1200px) {
+@media (min-width: 651px) and (max-width: 700px) {
   .body-container {
-    zoom: 61.14%;
+    zoom: 36.46%;
   }
 }
 
-@media (min-width: 1201px) and (max-width: 1300px) {
+@media (min-width: 701px) and (max-width: 750px) {
   .body-container {
-    zoom: 66.72%;
+    zoom: 39.06%;
   }
 }
 
-@media (min-width: 1301px) and (max-width: 1400px) {
+@media (min-width: 751px) and (max-width: 800px) {
   .body-container {
-    zoom: 72.29%;
+    zoom: 41.67%;
   }
 }
 
-@media (min-width: 1401px) and (max-width: 1500px) {
+@media (min-width: 801px) and (max-width: 851px) {
   .body-container {
-    zoom: 77.83%;
+    zoom: 44.27%;
   }
 }
 
-@media (min-width: 1501px) and (max-width: 1600px) {
+@media (min-width: 851px) and (max-width: 900px) {
   .body-container {
-    zoom: 83.39%;
+    zoom: 46.88%;
   }
 }
 
-@media (min-width: 1601px) and (max-width: 1700px) {
+@media (min-width: 901px) and (max-width: 950px) {
   .body-container {
-    zoom: 88.94%;
+    zoom: 49.48%;
   }
 }
 
-@media (min-width: 1701px) and (max-width: 1800px) {
+@media (min-width: 951px) and (max-width: 1000px) {
   .body-container {
-    zoom: 94.50%;
+    zoom: 52.08%;
   }
 }
 
-@media (min-width: 1801px) and (max-width: 1900px) {
+@media (min-width: 1001px) and (max-width: 1050px) {
   .body-container {
-    zoom: 100.06%;
+    zoom: 54.69%;
   }
 }
 
-@media (min-width: 1901px) and (max-width: 2000px) {
+@media (min-width: 1051px) and (max-width: 1100px) {
   .body-container {
-    zoom: 105.61%;
+    zoom: 57.29%;
   }
 }
 
-@media (min-width: 2001px) and (max-width: 2100px) {
+@media (min-width: 1101px) and (max-width: 1150px) {
   .body-container {
-    zoom: 111.17%;
+    zoom: 59.90%;
   }
 }
 
-@media (min-width: 2101px) and (max-width: 2200px) {
+@media (min-width: 1151px) and (max-width: 1200px) {
   .body-container {
-    zoom: 116.72%;
+    zoom: 62.50%;
   }
 }
 
-@media (min-width: 2201px) {
+@media (min-width: 1201px) and (max-width: 1250px) {
   .body-container {
-    zoom: 116.72%;
+    zoom: 65.10%;
+  }
+}
+
+@media (min-width: 1251px) and (max-width: 1300px) {
+  .body-container {
+    zoom: 67.71%;
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1350px) {
+  .body-container {
+    zoom: 70.31%;
+  }
+}
+
+@media (min-width: 1351px) and (max-width: 1400px) {
+  .body-container {
+    zoom: 72.92%;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1450px) {
+  .body-container {
+    zoom: 75.52%;
+  }
+}
+
+@media (min-width: 1451px) and (max-width: 1500px) {
+  .body-container {
+    zoom: 78.13%;
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 1550px) {
+  .body-container {
+    zoom: 80.73%;
+  }
+}
+
+@media (min-width: 1551px) and (max-width: 1600px) {
+  .body-container {
+    zoom: 83.33%;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 1650px) {
+  .body-container {
+    zoom: 85.94%;
+  }
+}
+
+@media (min-width: 1651px) and (max-width: 1700px) {
+  .body-container {
+    zoom: 88.54%;
+  }
+}
+
+@media (min-width: 1701px) and (max-width: 1750px) {
+  .body-container {
+    zoom: 91.15%;
+  }
+}
+
+@media (min-width: 1751px) and (max-width: 1800px) {
+  .body-container {
+    zoom: 93.75%;
+  }
+}
+
+@media (min-width: 1801px) and (max-width: 1850px) {
+  .body-container {
+    zoom: 96.35%;
+  }
+}
+
+@media (min-width: 1851px) and (max-width: 1900px) {
+  .body-container {
+    zoom: 98.96%;
+  }
+}
+
+@media (min-width: 1901px) and (max-width: 1950px) {
+  .body-container {
+    zoom: 101.56%;
+  }
+}
+
+@media (min-width: 1951px) and (max-width: 2000px) {
+  .body-container {
+    zoom: 104.17%;
+  }
+}
+
+@media (min-width: 2001px) and (max-width: 2050px) {
+  .body-container {
+    zoom: 106.77%;
+  }
+}
+
+@media (min-width: 2051px) and (max-width: 2100px) {
+  .body-container {
+    zoom: 109.38%;
+  }
+}
+
+@media (min-width: 2101px) and (max-width: 2150px) {
+  .body-container {
+    zoom: 111.98%;
+  }
+}
+
+@media (min-width: 2151px) and (max-width: 2200px) {
+  .body-container {
+    zoom: 114.58%;
+  }
+}
+
+@media (min-width: 2201px) and (max-width: 2250px) {
+  .body-container {
+    zoom: 117.19%;
+  }
+}
+
+@media (min-width: 2251px) and (max-width: 2300px) {
+  .body-container {
+    zoom: 119.79%;
+  }
+}
+
+@media (min-width: 2301px) and (max-width: 2350px) {
+  .body-container {
+    zoom: 122.40%;
+  }
+}
+
+@media (min-width: 2351px) and (max-width: 2400px) {
+  .body-container {
+    zoom: 125.00%;
+  }
+}
+
+@media (min-width: 2401px) and (max-width: 2450px) {
+  .body-container {
+    zoom: 127.60%;
+  }
+}
+
+@media (min-width: 2451px) and (max-width: 2500px) {
+  .body-container {
+    zoom: 130.21%;
+  }
+}
+
+@media (min-width: 2501px) and (max-width: 2550px) {
+  .body-container {
+    zoom: 132.81%;
+  }
+}
+
+@media (min-width: 2551px) and (max-width: 2600px) {
+  .body-container {
+    zoom: 135.42%;
+  }
+}
+
+@media (min-width: 2601px) {
+  .body-container {
+    zoom: 135.42%;
   }
 }
 
@@ -1198,7 +1366,6 @@ header .container {
   width: 253px;
   border: none;
   border-bottom: #FFF 1px solid;
-  cursor: pointer;
 }
 
 .services__scroll-thumb {
@@ -1207,7 +1374,6 @@ header .container {
   width: 126.5px;
   border: none;
   border-bottom: #E74214 3px solid;
-  cursor: pointer;
   transition: 0.3s ease;
 }
 
@@ -1379,7 +1545,6 @@ header .container {
   z-index: 99;
 }
 
-/* Стиль для всплывающего окна */
 .service__popup {
   display: none;
   position: fixed;
@@ -1394,7 +1559,6 @@ header .container {
   z-index: 100;
 }
 
-/* Стиль для кнопки закрытия */
 .service__close-button {
   position: absolute;
   top: 2px;
@@ -1490,14 +1654,14 @@ header .container {
 
 .projects {
   width: 1920px;
-  height: 2180px;
+  height: auto;
   background-color: #2E2E31;
   display: grid;
   justify-content: center;
 }
 
 .projects__title {
-  margin-top: 173px;
+  margin-top: 95px;
   font-family: 'Bebas Neue Pro';
   font-size: 50px;
   line-height: 50px;
@@ -1542,7 +1706,7 @@ header .container {
 
 .projects__tag.active {
   background-color: #EA4C14;
-  border: none;
+  border: #EA4C14 1px solid;
   color: white;
 }
 
