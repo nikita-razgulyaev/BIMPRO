@@ -1653,10 +1653,9 @@ header .container {
 }
 
 .projects {
-  width: 1920px;
-  height: auto;
+  height: 2100px;
   background-color: #2E2E31;
-  display: grid;
+  display: flex;
   justify-content: center;
 }
 
@@ -1683,7 +1682,7 @@ header .container {
 
 .projects__tag {
   margin-top: 5px;
-  padding: 0 35px;
+  padding: 0 34px;
   width: max-content;
   height: 44px;
   background: none;
@@ -1729,7 +1728,7 @@ header .container {
 }
 
 .projects__items {
-  margin-top: -5px;
+  height: 1625px;
   display: flex;
   gap: 20px;
 }
@@ -1833,6 +1832,7 @@ header .container {
 }
 
 .projects__button {
+  margin-top: 25px;
   width: 436px;
   height: 64px;
   background: none;
