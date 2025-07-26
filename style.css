@@ -2846,10 +2846,11 @@ footer {
   margin-top: 70px;
   width: 1920px;
   height: 75px;
-  border-top: #E3E2E2 0.6px solid;
+  border-top: #6a6a6a 0.6px solid;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #6a6a6a;
 }
 
 .footer__bottom-container {
