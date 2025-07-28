@@ -3005,10 +3005,31 @@ footer {
   border-radius: 6px;
   font-family: 'Roboto-Regular';
   font-size: 18px;
-  color: #9A9A9A;
+  color: #2E2E31;
   outline: none;
   transition: 0.2s;
 }
+
+.feedback-form__input::placeholder {
+  color: #9A9A9A;
+}
+
+.feedback-form__input:-moz-placeholder {
+  color: #9A9A9A;
+}
+
+.feedback-form__input::-moz-placeholder {
+  color: #9A9A9A;
+}
+
+.feedback-form__input:-ms-input-placeholder {
+  color: #9A9A9A;
+}
+
+.feedback-form__input::-webkit-input-placeholder{
+  color: #9A9A9A;
+}
+
 
 .error {
   border: 2px solid red;
@@ -3030,6 +3051,7 @@ footer {
   font-family: 'Roboto-Regular';
   font-size: 18px;
   color: #FFF;
+  cursor: pointer;
   transition: 0.3s;
 }
 

@@ -39,7 +39,10 @@ const selectors = {
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
   if (section) {
-    const screenHeightOffset = window.innerHeight * 0.14;
+    const sectionsWithLargerOffset = ['home', 'services', 'advantages'];
+    const screenHeightOffset = sectionsWithLargerOffset.includes(sectionId) 
+      ? window.innerHeight * 0.14 
+      : window.innerHeight * 0.083;
     const sectionPosition = section.getBoundingClientRect().top + window.scrollY - screenHeightOffset;
     window.scrollTo({ top: sectionPosition, behavior: 'smooth' });
   }
@@ -61,13 +64,16 @@ function scrollToHome() {
         windowReload();
       } else {
         window.scrollTo({ top: sectionPosition, behavior: 'smooth' });
-        window.addEventListener('scroll', () => {
-          const target = document.getElementById(selectors.sections.home);
-          const rect = target.getBoundingClientRect();
-          if (rect.top <= 0 && rect.bottom >= 0) {
-            setTimeout(windowReload, 300);
-          }
-        }, { once: true });
+        const scrollEndHandler = () => {
+          const currentScroll = window.scrollY;
+          setTimeout(() => {
+            if (Math.abs(window.scrollY - currentScroll) < 1) {
+              windowReload();
+              window.removeEventListener('scroll', scrollEndHandler);
+            }
+          }, 100);
+        };
+        window.addEventListener('scroll', scrollEndHandler);
       }
     }
     checkElementVisibility(section);
